@@ -112,9 +112,12 @@ Table of Contents
 
                                  Table 1
 
-   (i) Avoid control to break the component (ii) the gain must be
-   measurable (iii) network-wide solution must include legacy devices
-   and green-wg ready devices
+   (i) Avoid control to break the component
+
+   (ii) the gain must be measurable
+
+   (iii) network-wide solution must include legacy devices and green-wg
+   ready devices
 
 3.  Requirements from [rfc6988bis-green] draft Open Issues
 
