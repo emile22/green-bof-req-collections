@@ -81,7 +81,7 @@ The tables below respect the format and the semantic of operators requirements t
 |Analysis|assess the gains of introducing eco-designed components in a device|Device Level Mgmt| 1 (ii)|
 |Control& Mgmt|comprehensive support of network-wide energy efficiency includes legacy devices|Network Level Mgmt| 1 (iii)|
 
-(i) Avoid control to break the component 
+(i) Avoid control to break the component
 (ii) the gain must be measurable
 (iii) network-wide solution must include legacy devices and green-wg ready devices
 
