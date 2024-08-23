@@ -124,14 +124,14 @@ Table of Contents
    | Control& Mgmt | Distinguish     | rfc6988bis battery  | 2        |
    |               | backup sources  |                     |          |
    +---------------+-----------------+---------------------+----------+
-   | Inventory     | Reporting on    | Fit in “Inventory   | 2        |
+   | Inventory     | Reporting on    | Fit in "Inventory   | 2        |
    | Management    | Other Entities, | of power components |          |
    |               | typically smart | (of devices, racks, |          |
    |               | PDU or PoE      | etc) including      |          |
-   |               |                 | together”           |          |
+   |               |                 | together"           |          |
    +---------------+-----------------+---------------------+----------+
    | Observability | Room sensor     | Data Center Case    | 4        |
-   | or            | (hvac…)         |                     |          |
+   | or            | (hvac...)       |                     |          |
    | Interaction   |                 |                     |          |
    | with Other    |                 |                     |          |
    | domain        |                 |                     |          |
