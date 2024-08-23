@@ -1,7 +1,7 @@
 ---
 title: "Green BoF requirements collections"
 abbrev: "Green BoF requirements collections"
-docname: draft-stephan-green-bof-reqs-collections
+docname: draft-stephan-green-bof-reqs-collections-latest
 
 category: info
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
