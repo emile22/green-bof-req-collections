@@ -42,8 +42,7 @@ informative:
     target: "https://github.com/marisolpalmero/GREEN-bof"
 
   rfc6988bis:
-    title: "Requirements for Energy Efficiency Management, 11 years after the EMAN
-                                RFC6988"
+    title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
     date: 2024-07-21
     target: "https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis"
 
@@ -57,6 +56,7 @@ informative:
 this memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
 
 --- middle
+
 # Introduction
 
 this memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
@@ -68,7 +68,6 @@ TODO Security
 # IANA Considerations
 
 This document has no IANA actions.
-
 
 --- back
 
