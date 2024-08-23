@@ -41,7 +41,7 @@ informative:
     date: 2024-05-10
     target: "https://github.com/marisolpalmero/GREEN-bof"
 
-  rfc6988bis:
+  rfc6988bis-green:
     title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
     date: 2024-07-21
     target: "https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis"
@@ -59,9 +59,9 @@ this memo extracts and groups requirements from the drafts which provided materi
 
 # Introduction
 
-this memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [rfc6988bis] and [legacy-path] to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
+this memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [rfc6988bis-green] and [legacy-path] to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
 
-# Requirements from [rfc6988bis] draft Open Issues 
+# Requirements from [rfc6988bis-green] draft Open Issues 
 
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
