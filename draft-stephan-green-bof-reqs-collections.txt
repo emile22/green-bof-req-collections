@@ -89,9 +89,7 @@ Table of Contents
    of the framework [last-charter].
 
    The tables below respect the format and the semantic of operators
-   requirements table of [last-charter].  The priority value does not
-   reflect the importance of the requirement.  Requirements with lowest
-   values should be worked out in WG specifications first.
+   requirements table of [last-charter].
 
 2.  Requirements extracted from [legacy-path]
 
