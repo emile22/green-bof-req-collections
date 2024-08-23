@@ -71,7 +71,7 @@ This memo extracts and groups requirements from the drafts which provided materi
 
 This memo extracts and groups requirements  from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework [last-charter].
 
-The tables below respect the format and the semantic of operators requirements table of [last-charter]. The priority value does not reflect the importance of the requirement. Requirements with lowest values should be worked out in WG specifications first.
+The tables below respect the format and the semantic of operators requirements table of [last-charter].
 
 # Requirements extracted from [legacy-path]
 
