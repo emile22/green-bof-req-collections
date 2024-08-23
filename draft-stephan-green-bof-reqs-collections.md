@@ -59,7 +59,7 @@ this memo extracts and groups requirements from the drafts which provided materi
 
 # Introduction
 
-this memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
+this memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [rfc6988bis] and [legacy-path] to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
 
 # Security Considerations
 
