@@ -1,0 +1,203 @@
+
+
+
+
+Getting Ready for Energy-Efficient Networking                 E. Stephan
+Internet-Draft                                                    Orange
+Intended status: Informational                                M. Palmero
+Expires: 24 February 2025                                  Cisco Systems
+                                                          23 August 2024
+
+
+                   Green BoF requirements collections
+            draft-stephan-green-bof-reqs-collections-latest
+
+Abstract
+
+   This memo extracts and groups requirements from the drafts which
+   provided material to the green BoF.  The aim is to determine initial
+   sets of requirements actionable at different levels of the framework.
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   The latest revision of this draft can be found at
+   https://emile22.github.io/green-bof-req-collections/draft-stephan-
+   green-bof-reqs-collections.html.  Status information for this
+   document may be found at https://datatracker.ietf.org/doc/draft-
+   stephan-green-bof-reqs-collections/.
+
+   Discussion of this document takes place on the Getting Ready for
+   Energy-Efficient Networking Working Group mailing list (mailto:green-
+   bof@ietf.org), which is archived at
+   https://mailarchive.ietf.org/arch/browse/green-bof/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/green-bof/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/emile22/green-bof-req-collections.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 24 February 2025.
+
+Copyright Notice
+
+   Copyright (c) 2024 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Requirements extracted from legacy-path
+   3.  Requirements from rfc6988bis-green draft Open Issues
+   4.  Requirements extracted from sustainability-insights uses cases
+   5.  Security Considerations
+   6.  IANA Considerations
+   7.  Informative References
+   Acknowledgments
+   Authors' Addresses
+
+1.  Introduction
+
+   This memo extracts and groups requirements from the drafts which
+   provided material [GREEN-BOF], [sustainability-insights],
+   [legacy-path] and [rfc6988bis-green] to the green BoF.  The aim is to
+   determine initial sets of requirements actionable at different levels
+   of the framework [last-charter].
+
+2.  Requirements extracted from [legacy-path]
+
+    +============+============================+===========+==========+
+    | category   | requirements               | note      | Priority |
+    +============+============================+===========+==========+
+    | Inventory  | component control capacity | Per       |          |
+    | Management | (aka component max on/off  | component |          |
+    |            | frequency supported)       | control   |          |
+    +------------+----------------------------+-----------+----------+
+    | Analysis   | assess the gains of        | Device    |          |
+    |            | introducing eco-designed   | Level     |          |
+    |            | components in a device     | Mgmt      |          |
+    +------------+----------------------------+-----------+----------+
+    | Control&   | comprehensive support of   | Network   |          |
+    | Mgmt       | network-wide energy        | Level     |          |
+    |            | efficiency includes legacy | Mgmt      |          |
+    |            | devices                    |           |          |
+    +------------+----------------------------+-----------+----------+
+
+                                 Table 1
+
+3.  Requirements from [rfc6988bis-green] draft Open Issues
+
+   +===============+=================+=====================+==========+
+   | category      | requirements    | note                | Priority |
+   +===============+=================+=====================+==========+
+   | Control& Mgmt | Distinguish     | rfc6988bis battery  |          |
+   |               | backup sources  |                     |          |
+   +---------------+-----------------+---------------------+----------+
+   | Inventory     | Reporting on    | Fit in “Inventory   |          |
+   | Management    | Other Entities, | of power components |          |
+   |               | typically smart | (of devices, racks, |          |
+   |               | PDU or PoE      | etc) including      |          |
+   |               |                 | together”           |          |
+   +---------------+-----------------+---------------------+----------+
+   | Observability | Room sensor     | Data Center Case    |          |
+   | or            | (hvac…)         |                     |          |
+   | Interaction   |                 |                     |          |
+   | with Other    |                 |                     |          |
+   | domain        |                 |                     |          |
+   +---------------+-----------------+---------------------+----------+
+   | Observability | flexible        | Standard metric     |          |
+   |               | (future-proof)  |                     |          |
+   |               | description of  |                     |          |
+   |               | the nature of   |                     |          |
+   |               | the sources of  |                     |          |
+   |               | the energy used |                     |          |
+   +---------------+-----------------+---------------------+----------+
+
+                                 Table 2
+
+4.  Requirements extracted from [sustainability-insights] uses cases
+
+               +==========+==============+======+==========+
+               | category | requirements | note | Priority |
+               +==========+==============+======+==========+
+               +----------+--------------+------+----------+
+               +----------+--------------+------+----------+
+
+                                  Table 3
+
+5.  Security Considerations
+
+   TODO Security
+
+6.  IANA Considerations
+
+   This document has no IANA actions.
+
+7.  Informative References
+
+   [GREEN-BOF]
+              "BOF proposal for GREEN WG Creation", 10 May 2024,
+              <https://github.com/marisolpalmero/GREEN-bof>.
+
+   [last-charter]
+              "GREEN BOF framework", 20 August 2024,
+              <https://github.com/marisolpalmero/GREEN-
+              bof/blob/main/Meetings/Meeting_0820_2024/
+              GREEN%20BOF%20Charter%20Refining%20discussion-
+              2024-8-20.pdf>.
+
+   [legacy-path]
+              "Requirements for Energy Efficiency Management", 21 July
+              2024, <https://datatracker.ietf.org/doc/draft-stephan-
+              legacy-path-eco-design>.
+
+   [rfc6988bis-green]
+              "Requirements for Energy Efficiency Management, 11 years
+              after the EMAN RFC6988", 21 July 2024,
+              <https://datatracker.ietf.org/doc/draft-eman-green-
+              rfc6988bis>.
+
+   [sustainability-insights]
+              "Sustainability Insights", 7 May 2024,
+              <https://datatracker.ietf.org/doc/html/draft-almprs-
+              sustainability-insights>.
+
+Acknowledgments
+
+   TODO acknowledge.
+
+Authors' Addresses
+
+   Emile Stephan
+   Orange
+   France
+   Email: emile.stephan@gmail.com
+
+
+   Marisol Palmero
+   Cisco Systems
+   Email: mpalmero@cisco.com
