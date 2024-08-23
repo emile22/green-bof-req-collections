@@ -45,11 +45,11 @@ informative:
     title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
     date: 2024-07-21
     target: "https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis"
-    
+
   sustainability-insights:
-    title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
-    date: 2024-07-21
-    target: "https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis"
+    title: "Sustainability Insights"
+    date: 2024-05-07
+    target: "https://datatracker.ietf.org/doc/html/draft-almprs-sustainability-insights"
 
   legacy-path:
     title: "Requirements for Energy Efficiency Management"
