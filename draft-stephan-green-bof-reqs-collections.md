@@ -92,6 +92,8 @@ This memo extracts and groups requirements  from the drafts which provided mater
 
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
+|  |  |  |  |
+|  |  |  |  |
 
 # Security Considerations
 
