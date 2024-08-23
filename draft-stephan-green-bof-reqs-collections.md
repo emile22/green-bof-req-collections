@@ -90,8 +90,8 @@ The tables below respect the format and the semantic of operators requirements t
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
 |Control& Mgmt|Distinguish backup sources|rfc6988bis battery| 2|
-|Inventory Management|Reporting on Other Entities, typically smart PDU or PoE|Fit in “Inventory of power components (of devices, racks, etc) including together”| 2|
-|Observability or Interaction with Other domain|Room sensor (hvac…)|Data Center Case| 4|
+|Inventory Management|Reporting on Other Entities, typically smart PDU or PoE|Fit in "Inventory of power components (of devices, racks, etc) including together"| 2|
+|Observability or Interaction with Other domain|Room sensor (hvac...)|Data Center Case| 4|
 |Observability|flexible (future-proof) description of the nature of the sources of the energy used |Standard metric|2 |
 
 # Requirements extracted from [sustainability-insights] uses cases
