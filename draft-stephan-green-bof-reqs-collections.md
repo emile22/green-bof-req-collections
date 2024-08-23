@@ -88,7 +88,9 @@ This memo extracts and groups requirements  from the drafts which provided mater
 |Observability or Interaction with Other domain|Room sensor (hvac…)|Data Center Case| |
 |Observability|flexible (future-proof) description of the nature of the sources of the energy used |Standard metric| |
 
-# Requirements extracted from [sustainability-insights] uses cases, limiting them to energy consumption vs sustainability:
+# Requirements extracted from [sustainability-insights] uses cases
+
+There are limited to energy consumption vs sustainability
 
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
@@ -96,7 +98,7 @@ This memo extracts and groups requirements  from the drafts which provided mater
 |Migration or Upgrade | Provide KPIs for energy efficiency parameters, enhance accuracy of upgrade decisions | Helps make informed decisions about upgrades based on actual usage data. |  |
 |Recycling | Report on percentage of recycled user devices. Enable comprehensive reporting and recycling efforts | Major driver of the circular economy, transparency is key | Low |
 |Power Optimization | Provide KPIs for energy efficiency parameters. Perform actions to reduce energy consumption | Monitor network and application performance to optimize power usage |  |
-|Switch off | Stop and restart WiFi APs with the right time, space, and service granularity | Save power consumption during periods when APs are not in use.|  |
+|Control& Mgmt Switch off | Stop and restart WiFi APs with the right time, space, and service granularity | Save power consumption during periods when APs are not in use.|  |
 
 
 # Security Considerations
