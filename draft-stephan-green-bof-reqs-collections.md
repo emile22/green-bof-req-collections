@@ -6,17 +6,17 @@ docname: draft-stephan-green-bof-reqs-collections-latest
 category: info
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 consensus: true
-area: OPS
-workgroup: WG Working Group
+area: "Operations and Management"
+workgroup: "Getting Ready for Energy-Efficient Networking"
 keyword: Sustainability, Ressources
 
 venue:
-  group: "Green BoF"
-  type: "individual"
+  group: "Getting Ready for Energy-Efficient Networking"
+  type: "Working Group"
   mail: "green-bof@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/green-bof/"
-  github: "emile22/sustainability"
-  latest: "https://emile22.github.io/sustainability/draft-stephan-green-bof-reqs-collections-latest.html"
+  github: "emile22/green-bof-req-collections"
+  latest: "https://emile22.github.io/green-bof-req-collections/draft-stephan-green-bof-reqs-collections.html"
 
 v: 3
 
