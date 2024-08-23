@@ -56,15 +56,20 @@ informative:
     date: 2024-07-21
     target: "https://datatracker.ietf.org/doc/draft-stephan-legacy-path-eco-design"
 
+  last-charter:
+    title: "GREEN BOF framework"
+    date: 2024-08-20
+    target: "https://github.com/marisolpalmero/GREEN-bof/blob/main/Meetings/Meeting_0820_2024/GREEN%20BOF%20Charter%20Refining%20discussion-2024-8-20.pdf"
+
 --- abstract
 
-this memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
+This memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework.
 
 --- middle
 
 # Introduction
 
-this memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
+This memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework [last-charter].
 
 # Requirements extracted from [legacy-path]
 
