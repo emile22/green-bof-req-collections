@@ -73,8 +73,7 @@ Table of Contents
    1.  Introduction
    2.  Requirements extracted from legacy-path
    3.  Requirements from rfc6988bis-green draft Open Issues
-   4.  Requirements extracted from sustainability-insights uses cases,
-           limiting them to energy consumption vs sustainability:
+   4.  Requirements extracted from sustainability-insights uses cases
    5.  Security Considerations
    6.  IANA Considerations
    7.  Informative References
@@ -140,8 +139,9 @@ Table of Contents
 
                                  Table 2
 
-4.  Requirements extracted from [sustainability-insights] uses cases,
-    limiting them to energy consumption vs sustainability:
+4.  Requirements extracted from [sustainability-insights] uses cases
+
+   There are limited to energy consumption vs sustainability
 
    +===============+=======================+================+==========+
    | category      | requirements          | note           | Priority |
@@ -177,8 +177,8 @@ Table of Contents
    |               | to reduce energy      | optimize power |          |
    |               | consumption           | usage          |          |
    +---------------+-----------------------+----------------+----------+
-   | Switch off    | Stop and restart      | Save power     |          |
-   |               | WiFi APs with the     | consumption    |          |
+   | Control& Mgmt | Stop and restart      | Save power     |          |
+   | Switch off    | WiFi APs with the     | consumption    |          |
    |               | right time,           | during periods |          |
    |               | space, and            | when APs are   |          |
    |               | service               | not in use.    |          |
