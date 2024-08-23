@@ -73,7 +73,8 @@ Table of Contents
    1.  Introduction
    2.  Requirements extracted from legacy-path
    3.  Requirements from rfc6988bis-green draft Open Issues
-   4.  Requirements extracted from sustainability-insights uses cases
+   4.  Requirements extracted from sustainability-insights uses cases,
+           limiting them to energy consumption vs sustainability:
    5.  Security Considerations
    6.  IANA Considerations
    7.  Informative References
@@ -139,13 +140,50 @@ Table of Contents
 
                                  Table 2
 
-4.  Requirements extracted from [sustainability-insights] uses cases
+4.  Requirements extracted from [sustainability-insights] uses cases,
+    limiting them to energy consumption vs sustainability:
 
-               +==========+==============+======+==========+
-               | category | requirements | note | Priority |
-               +==========+==============+======+==========+
-               +----------+--------------+------+----------+
-               +----------+--------------+------+----------+
+   +===============+=======================+================+==========+
+   | category      | requirements          | note           | Priority |
+   +===============+=======================+================+==========+
+   | Observability | Provide near-         | Helps identify |          |
+   |               | real-time energy      | which devices  |          |
+   |               | consumption to        | or network     |          |
+   |               | different device      | functions are  |          |
+   |               | types, service        | consuming more |          |
+   |               | types, and            | energy.        |          |
+   |               | individual users      |                |          |
+   +---------------+-----------------------+----------------+----------+
+   | Migration or  | Provide KPIs for      | Helps make     |          |
+   | Upgrade       | energy efficiency     | informed       |          |
+   |               | parameters,           | decisions      |          |
+   |               | enhance accuracy      | about upgrades |          |
+   |               | of upgrade            | based on       |          |
+   |               | decisions             | actual usage   |          |
+   |               |                       | data.          |          |
+   +---------------+-----------------------+----------------+----------+
+   | Recycling     | Report on             | Major driver   | Low      |
+   |               | percentage of         | of the         |          |
+   |               | recycled user         | circular       |          |
+   |               | devices.  Enable      | economy,       |          |
+   |               | comprehensive         | transparency   |          |
+   |               | reporting and         | is key         |          |
+   |               | recycling efforts     |                |          |
+   +---------------+-----------------------+----------------+----------+
+   | Power         | Provide KPIs for      | Monitor        |          |
+   | Optimization  | energy efficiency     | network and    |          |
+   |               | parameters.           | application    |          |
+   |               | Perform actions       | performance to |          |
+   |               | to reduce energy      | optimize power |          |
+   |               | consumption           | usage          |          |
+   +---------------+-----------------------+----------------+----------+
+   | Switch off    | Stop and restart      | Save power     |          |
+   |               | WiFi APs with the     | consumption    |          |
+   |               | right time,           | during periods |          |
+   |               | space, and            | when APs are   |          |
+   |               | service               | not in use.    |          |
+   |               | granularity           |                |          |
+   +---------------+-----------------------+----------------+----------+
 
                                   Table 3
 

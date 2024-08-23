@@ -1140,7 +1140,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-requirements-from-draft-ope" class="internal xref">Requirements from rfc6988bis-green draft Open Issues</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-requirements-extracted-from-" class="internal xref">Requirements extracted from sustainability-insights uses cases</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-requirements-extracted-from-" class="internal xref">Requirements extracted from sustainability-insights uses cases, limiting them to energy consumption vs sustainability:</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
             <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
@@ -1251,10 +1251,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
       </table>
 </section>
 </div>
-<div id="requirements-extracted-from-sustainability-insights-uses-cases">
+<div id="requirements-extracted-from-sustainability-insights-uses-cases-limiting-them-to-energy-consumption-vs-sustainability">
 <section id="section-4">
       <h2 id="name-requirements-extracted-from-">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-requirements-extracted-from-" class="section-name selfRef">Requirements extracted from <span class="cite xref">[sustainability-insights]</span> uses cases</a>
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-requirements-extracted-from-" class="section-name selfRef">Requirements extracted from <span class="cite xref">[sustainability-insights]</span> uses cases, limiting them to energy consumption vs sustainability:</a>
       </h2>
 <table class="center" id="table-3">
         <caption><a href="#table-3" class="selfRef">Table 3</a></caption>
@@ -1268,15 +1268,33 @@ svg :is([fill="white"], [fill^="#fff"]) {
         </thead>
         <tbody>
           <tr>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">Observability</td>
+            <td class="text-left" rowspan="1" colspan="1">Provide near-real-time energy consumption to different device types, service types, and individual users</td>
+            <td class="text-left" rowspan="1" colspan="1">Helps identify which devices or network functions are consuming more energy.</td>
             <td class="text-left" rowspan="1" colspan="1"> </td>
           </tr>
           <tr>
+            <td class="text-left" rowspan="1" colspan="1">Migration or Upgrade</td>
+            <td class="text-left" rowspan="1" colspan="1">Provide KPIs for energy efficiency parameters, enhance accuracy of upgrade decisions</td>
+            <td class="text-left" rowspan="1" colspan="1">Helps make informed decisions about upgrades based on actual usage data.</td>
             <td class="text-left" rowspan="1" colspan="1"> </td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Recycling</td>
+            <td class="text-left" rowspan="1" colspan="1">Report on percentage of recycled user devices. Enable comprehensive reporting and recycling efforts</td>
+            <td class="text-left" rowspan="1" colspan="1">Major driver of the circular economy, transparency is key</td>
+            <td class="text-left" rowspan="1" colspan="1">Low</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Power Optimization</td>
+            <td class="text-left" rowspan="1" colspan="1">Provide KPIs for energy efficiency parameters. Perform actions to reduce energy consumption</td>
+            <td class="text-left" rowspan="1" colspan="1">Monitor network and application performance to optimize power usage</td>
             <td class="text-left" rowspan="1" colspan="1"> </td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Switch off</td>
+            <td class="text-left" rowspan="1" colspan="1">Stop and restart WiFi APs with the right time, space, and service granularity</td>
+            <td class="text-left" rowspan="1" colspan="1">Save power consumption during periods when APs are not in use.</td>
             <td class="text-left" rowspan="1" colspan="1"> </td>
           </tr>
         </tbody>
