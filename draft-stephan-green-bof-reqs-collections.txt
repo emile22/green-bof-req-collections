@@ -88,20 +88,25 @@ Table of Contents
    determine initial sets of requirements actionable at different levels
    of the framework [last-charter].
 
+   The tables below respect the format and the semantic of operators
+   requirements table of [last-charter].  The priority value does not
+   reflect the importance of the requirement.  Requirements with lowest
+   values should be worked out in WG specifications first.
+
 2.  Requirements extracted from [legacy-path]
 
     +============+============================+===========+==========+
     | category   | requirements               | note      | Priority |
     +============+============================+===========+==========+
-    | Inventory  | component control capacity | Per       |          |
+    | Inventory  | component control capacity | Per       | 1 (i)    |
     | Management | (aka component max on/off  | component |          |
     |            | frequency supported)       | control   |          |
     +------------+----------------------------+-----------+----------+
-    | Analysis   | assess the gains of        | Device    |          |
+    | Analysis   | assess the gains of        | Device    | 1 (ii)   |
     |            | introducing eco-designed   | Level     |          |
     |            | components in a device     | Mgmt      |          |
     +------------+----------------------------+-----------+----------+
-    | Control&   | comprehensive support of   | Network   |          |
+    | Control&   | comprehensive support of   | Network   | 1 (iii)  |
     | Mgmt       | network-wide energy        | Level     |          |
     |            | efficiency includes legacy | Mgmt      |          |
     |            | devices                    |           |          |
@@ -109,27 +114,31 @@ Table of Contents
 
                                  Table 1
 
+   (i) Avoid control to break the component (ii) the gain must be
+   measurable (iii) network-wide solution must include legacy devices
+   and green-wg ready devices
+
 3.  Requirements from [rfc6988bis-green] draft Open Issues
 
    +===============+=================+=====================+==========+
    | category      | requirements    | note                | Priority |
    +===============+=================+=====================+==========+
-   | Control& Mgmt | Distinguish     | rfc6988bis battery  |          |
+   | Control& Mgmt | Distinguish     | rfc6988bis battery  | 2        |
    |               | backup sources  |                     |          |
    +---------------+-----------------+---------------------+----------+
-   | Inventory     | Reporting on    | Fit in “Inventory   |          |
+   | Inventory     | Reporting on    | Fit in “Inventory   | 2        |
    | Management    | Other Entities, | of power components |          |
    |               | typically smart | (of devices, racks, |          |
    |               | PDU or PoE      | etc) including      |          |
    |               |                 | together”           |          |
    +---------------+-----------------+---------------------+----------+
-   | Observability | Room sensor     | Data Center Case    |          |
+   | Observability | Room sensor     | Data Center Case    | 4        |
    | or            | (hvac…)         |                     |          |
    | Interaction   |                 |                     |          |
    | with Other    |                 |                     |          |
    | domain        |                 |                     |          |
    +---------------+-----------------+---------------------+----------+
-   | Observability | flexible        | Standard metric     |          |
+   | Observability | flexible        | Standard metric     | 2        |
    |               | (future-proof)  |                     |          |
    |               | description of  |                     |          |
    |               | the nature of   |                     |          |
@@ -146,8 +155,8 @@ Table of Contents
    +===============+=======================+================+==========+
    | category      | requirements          | note           | Priority |
    +===============+=======================+================+==========+
-   | Observability | Provide near-         | Helps identify |          |
-   |               | real-time energy      | which devices  |          |
+   | Observability | Provide near-real-    | Helps identify | 2        |
+   |               | time energy           | which devices  |          |
    |               | consumption to        | or network     |          |
    |               | different device      | functions are  |          |
    |               | types, service        | consuming more |          |
@@ -156,33 +165,32 @@ Table of Contents
    +---------------+-----------------------+----------------+----------+
    | Migration or  | Provide KPIs for      | Helps make     |          |
    | Upgrade       | energy efficiency     | informed       |          |
-   |               | parameters,           | decisions      |          |
-   |               | enhance accuracy      | about upgrades |          |
-   |               | of upgrade            | based on       |          |
-   |               | decisions             | actual usage   |          |
+   |               | parameters, enhance   | decisions      |          |
+   |               | accuracy of upgrade   | about upgrades |          |
+   |               | decisions             | based on       |          |
+   |               |                       | actual usage   |          |
    |               |                       | data.          |          |
    +---------------+-----------------------+----------------+----------+
-   | Recycling     | Report on             | Major driver   | Low      |
-   |               | percentage of         | of the         |          |
-   |               | recycled user         | circular       |          |
-   |               | devices.  Enable      | economy,       |          |
+   | Recycling     | Report on percentage  | Major driver   | 4        |
+   |               | of recycled user      | of the         |          |
+   |               | devices and           | circular       |          |
+   |               | components.  Enable   | economy,       |          |
    |               | comprehensive         | transparency   |          |
    |               | reporting and         | is key         |          |
    |               | recycling efforts     |                |          |
    +---------------+-----------------------+----------------+----------+
-   | Power         | Provide KPIs for      | Monitor        |          |
+   | Power         | Provide KPIs for      | Monitor        | 4        |
    | Optimization  | energy efficiency     | network and    |          |
-   |               | parameters.           | application    |          |
-   |               | Perform actions       | performance to |          |
-   |               | to reduce energy      | optimize power |          |
-   |               | consumption           | usage          |          |
+   |               | parameters.  Perform  | application    |          |
+   |               | actions to reduce     | performance to |          |
+   |               | energy consumption    | optimize power |          |
+   |               |                       | usage          |          |
    +---------------+-----------------------+----------------+----------+
-   | Control& Mgmt | Stop and restart      | Save power     |          |
+   | Control& Mgmt | Stop and restart      | Save power     | 2        |
    | Switch off    | WiFi APs with the     | consumption    |          |
-   |               | right time,           | during periods |          |
-   |               | space, and            | when APs are   |          |
-   |               | service               | not in use.    |          |
-   |               | granularity           |                |          |
+   |               | right time, space,    | during periods |          |
+   |               | and service           | when APs are   |          |
+   |               | granularity           | not in use.    |          |
    +---------------+-----------------------+----------------+----------+
 
                                   Table 3

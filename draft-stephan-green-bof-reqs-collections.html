@@ -1167,6 +1167,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
 <p id="section-1-1">This memo extracts and groups requirements  from the drafts which provided material <span>[<a href="#GREEN-BOF" class="cite xref">GREEN-BOF</a>]</span>, <span>[<a href="#sustainability-insights" class="cite xref">sustainability-insights</a>]</span>, <span>[<a href="#legacy-path" class="cite xref">legacy-path</a>]</span> and <span>[<a href="#rfc6988bis-green" class="cite xref">rfc6988bis-green</a>]</span> to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework <span>[<a href="#last-charter" class="cite xref">last-charter</a>]</span>.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">The tables below respect the format and the semantic of operators requirements table of <span>[<a href="#last-charter" class="cite xref">last-charter</a>]</span>. The priority value does not reflect the importance of the requirement. Requirements with lowest values should be worked out in WG specifications first.<a href="#section-1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="requirements-extracted-from-legacy-path">
@@ -1189,22 +1190,25 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <td class="text-left" rowspan="1" colspan="1">Inventory Management</td>
             <td class="text-left" rowspan="1" colspan="1">component control capacity (aka component max on/off frequency supported)</td>
             <td class="text-left" rowspan="1" colspan="1">Per component control</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">1 (i)</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Analysis</td>
             <td class="text-left" rowspan="1" colspan="1">assess the gains of introducing eco-designed components in a device</td>
             <td class="text-left" rowspan="1" colspan="1">Device Level Mgmt</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">1 (ii)</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Control&amp; Mgmt</td>
             <td class="text-left" rowspan="1" colspan="1">comprehensive support of network-wide energy efficiency includes legacy devices</td>
             <td class="text-left" rowspan="1" colspan="1">Network Level Mgmt</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">1 (iii)</td>
           </tr>
         </tbody>
       </table>
+<p id="section-2-2">(i) Avoid control to break the component
+(ii) the gain must be measurable
+(iii) network-wide solution must include legacy devices and green-wg ready devices<a href="#section-2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="requirements-from-rfc6988bis-green-draft-open-issues">
@@ -1227,25 +1231,25 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <td class="text-left" rowspan="1" colspan="1">Control&amp; Mgmt</td>
             <td class="text-left" rowspan="1" colspan="1">Distinguish backup sources</td>
             <td class="text-left" rowspan="1" colspan="1">rfc6988bis battery</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Inventory Management</td>
             <td class="text-left" rowspan="1" colspan="1">Reporting on Other Entities, typically smart PDU or PoE</td>
             <td class="text-left" rowspan="1" colspan="1">Fit in “Inventory of power components (of devices, racks, etc) including together”</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Observability or Interaction with Other domain</td>
             <td class="text-left" rowspan="1" colspan="1">Room sensor (hvac…)</td>
             <td class="text-left" rowspan="1" colspan="1">Data Center Case</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Observability</td>
             <td class="text-left" rowspan="1" colspan="1">flexible (future-proof) description of the nature of the sources of the energy used</td>
             <td class="text-left" rowspan="1" colspan="1">Standard metric</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
           </tr>
         </tbody>
       </table>
@@ -1272,7 +1276,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <td class="text-left" rowspan="1" colspan="1">Observability</td>
             <td class="text-left" rowspan="1" colspan="1">Provide near-real-time energy consumption to different device types, service types, and individual users</td>
             <td class="text-left" rowspan="1" colspan="1">Helps identify which devices or network functions are consuming more energy.</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Migration or Upgrade</td>
@@ -1282,21 +1286,21 @@ svg :is([fill="white"], [fill^="#fff"]) {
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Recycling</td>
-            <td class="text-left" rowspan="1" colspan="1">Report on percentage of recycled user devices. Enable comprehensive reporting and recycling efforts</td>
+            <td class="text-left" rowspan="1" colspan="1">Report on percentage of recycled user devices and components. Enable comprehensive reporting and recycling efforts</td>
             <td class="text-left" rowspan="1" colspan="1">Major driver of the circular economy, transparency is key</td>
-            <td class="text-left" rowspan="1" colspan="1">Low</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Power Optimization</td>
             <td class="text-left" rowspan="1" colspan="1">Provide KPIs for energy efficiency parameters. Perform actions to reduce energy consumption</td>
             <td class="text-left" rowspan="1" colspan="1">Monitor network and application performance to optimize power usage</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Control&amp; Mgmt Switch off</td>
             <td class="text-left" rowspan="1" colspan="1">Stop and restart WiFi APs with the right time, space, and service granularity</td>
             <td class="text-left" rowspan="1" colspan="1">Save power consumption during periods when APs are not in use.</td>
-            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
           </tr>
         </tbody>
       </table>
