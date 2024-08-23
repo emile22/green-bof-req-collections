@@ -43,38 +43,41 @@ venue:
   github: USER/REPO
   latest: https://example.com/LATEST
 
+v: 3
+
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+   name: Emile Stephan
+   organization: Orange
+   country: France
+   email: emile.stephan@gmail.com
 
+ -
+   name: Marisol Palmero
+   organization: Cisco Systems
+   email: mpalmero@cisco.com
+   
 normative:
 
 informative:
 
+  GREEN-BOF:
+    title: "BOF proposal for GREEN WG Creation"
+    date: 2024-05-10
+    target: "https://github.com/marisolpalmero/GREEN-bof"
 
 --- abstract
 
-TODO Abstract
-
+this memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
 
 --- middle
-
 # Introduction
 
-TODO Introduction
-
-
-# Conventions and Definitions
-
-{::boilerplate bcp14-tagged}
-
+this memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
 
 # Security Considerations
 
 TODO Security
-
 
 # IANA Considerations
 
