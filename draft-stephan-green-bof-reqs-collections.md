@@ -45,6 +45,11 @@ informative:
     title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
     date: 2024-07-21
     target: "https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis"
+    
+  sustainability-insights:
+    title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
+    date: 2024-07-21
+    target: "https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis"
 
   legacy-path:
     title: "Requirements for Energy Efficiency Management"
@@ -59,7 +64,15 @@ this memo extracts and groups requirements from the drafts which provided materi
 
 # Introduction
 
-this memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [rfc6988bis-green] and [legacy-path] to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
+this memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine several sets of requirements actionable at different levels.
+
+# Requirements extracted from [legacy-path]
+
+|category|requirements|note|Priority|
+|:----|:----|:----|:----|
+|Inventory Management|component control capacity (aka component max on/off frequency supported)|Per component control| |
+|Analysis|assess the gains of introducing eco-designed components in a device|Device Level Mgmt| |
+|Control& Mgmt|comprehensive support of network-wide energy efficiency includes legacy devices|Network Level Mgmt| |
 
 # Requirements from [rfc6988bis-green] draft Open Issues 
 
@@ -69,10 +82,11 @@ this memo extracts and groups requirements from the drafts which provided materi
 |Inventory Management|Reporting on Other Entities, typically smart PDU or PoE|Fit in “Inventory of power components (of devices, racks, etc) including together”| |
 |Observability or Interaction with Other domain|Room sensor (hvac…)|Data Center Case| |
 |Observability|flexible (future-proof) description of the nature of the sources of the energy used |Standard metric| |
-|Inventory Management|component control capacity (aka component max on/off frequency supported)|Per component control| |
-|Analysis|assess the gains of introducing eco-designed components in a device|Device Level Mgmt| |
-|Control& Mgmt|comprehensive support of network-wide energy efficiency includes legacy devices|Network Level Mgmt| |
 
+# Requirements extracted from [sustainability-insights] uses cases
+
+|category|requirements|note|Priority|
+|:----|:----|:----|:----|
 
 # Security Considerations
 
