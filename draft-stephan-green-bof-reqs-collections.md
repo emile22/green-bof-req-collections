@@ -79,7 +79,7 @@ This memo extracts and groups requirements from the drafts which provided materi
 |Analysis|assess the gains of introducing eco-designed components in a device|Device Level Mgmt| |
 |Control& Mgmt|comprehensive support of network-wide energy efficiency includes legacy devices|Network Level Mgmt| |
 
-# Requirements from [rfc6988bis-green] draft Open Issues 
+# Requirements from [rfc6988bis-green] draft Open Issues
 
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
