@@ -69,7 +69,7 @@ This memo extracts and groups requirements from the drafts which provided materi
 
 # Introduction
 
-This memo extracts and groups requirements from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework [last-charter].
+This memo extracts and groups requirements  from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework [last-charter].
 
 # Requirements extracted from [legacy-path]
 
