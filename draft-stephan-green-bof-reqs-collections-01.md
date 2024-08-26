@@ -67,7 +67,7 @@ This memo extracts and groups requirements from the drafts which provided materi
 
 Discussion Venues
 
-Source of this draft and an issue tracker can be found at https://github.com/emile22/green-bof-req-collections 
+The source of this draft and an issue tracker can be found at https://github.com/emile22/green-bof-req-collections 
    
 --- middle
 
