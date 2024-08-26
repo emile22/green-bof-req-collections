@@ -4,7 +4,6 @@ abbrev: "Green BoF requirements collections"
 docname: draft-stephan-green-bof-reqs-collections-01
 
 category: info
-stand_alone: true
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 consensus: true
 area: "Operations and Management"
