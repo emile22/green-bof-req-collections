@@ -76,7 +76,9 @@ This memo extracts and groups requirements from the revisit of  operator's requi
 
 The tables below respect the format and the semantic of operators requirements table of [charter-refinement].
 
-# Requirements extracted from [charter-refinement] operator's inputs
+# Operator'requirements from [charter-refinement] document
+
+The table below is an ascii art copy of the Operator'requirements table of [charter-refinement] pdf.
 
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
