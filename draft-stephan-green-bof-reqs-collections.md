@@ -4,6 +4,7 @@ abbrev: "Green BoF requirements collections"
 docname: draft-stephan-green-bof-reqs-collections-01
 
 category: info
+stand_alone: true
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 consensus: true
 area: "Operations and Management"
@@ -26,7 +27,6 @@ author:
    organization: Orange
    country: France
    email: emile.stephan@gmail.com
-
  -
    name: Marisol Palmero
    organization: Cisco Systems
@@ -65,6 +65,10 @@ informative:
 
 This memo extracts and groups requirements from the drafts which provided material to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework.
 
+Discussion Venues
+
+Source of this draft and an issue tracker can be found at https://github.com/emile22/green-bof-req-collections 
+   
 --- middle
 
 # Introduction
