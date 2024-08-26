@@ -5,8 +5,8 @@
 Getting Ready for Energy-Efficient Networking                 E. Stephan
 Internet-Draft                                                    Orange
 Intended status: Informational                                M. Palmero
-Expires: 24 February 2025                                  Cisco Systems
-                                                          23 August 2024
+Expires: 27 February 2025                                  Cisco Systems
+                                                          26 August 2024
 
 
                    Green BoF requirements collections
@@ -17,6 +17,11 @@ Abstract
    This memo extracts and groups requirements from the drafts which
    provided material to the green BoF.  The aim is to determine initial
    sets of requirements actionable at different levels of the framework.
+
+   Discussion Venues
+
+   The source of this draft and an issue tracker can be found at
+   https://github.com/emile22/green-bof-req-collections
 
 About This Document
 
@@ -52,7 +57,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 24 February 2025.
+   This Internet-Draft will expire on 27 February 2025.
 
 Copyright Notice
 
