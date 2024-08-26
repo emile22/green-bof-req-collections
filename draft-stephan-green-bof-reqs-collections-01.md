@@ -17,7 +17,7 @@ venue:
   mail: "green-bof@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/green-bof/"
   github: "emile22/green-bof-req-collections"
-  latest: "https://emile22.github.io/green-bof-req-collections/draft-stephan-green-bof-reqs-collections.html"
+  latest: "https://emile22.github.io/green-bof-req-collections/draft-stephan-green-bof-reqs-collections-01.html"
 
 v: 3
 
