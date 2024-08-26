@@ -14,9 +14,11 @@ Expires: 27 February 2025                                  Cisco Systems
 
 Abstract
 
-   This memo extracts and groups requirements from the drafts which
-   provided material to the green BoF.  The aim is to determine initial
-   sets of requirements actionable at different levels of the framework.
+   This memo extracts and groups requirements from the revisit of
+   operator's requirements made in the last charter refinement work and
+   from the drafts which provided material to the green BoF.  The aim is
+   to determine initial sets of requirements actionable at different
+   levels of the framework.
 
    Discussion Venues
 
@@ -76,10 +78,11 @@ Copyright Notice
 Table of Contents
 
    1.  Introduction
-   2.  Requirements extracted from legacy-path
-   3.  Requirements from rfc6988bis-green draft Open Issues
-   4.  Requirements extracted from sustainability-insights uses cases
-   5.  Requirements extracted from last-charter operator's inputs
+   2.  Requirements extracted from charter-refinement operator's
+           inputs
+   3.  Requirements extracted from legacy-path
+   4.  Requirements from rfc6988bis-green draft Open Issues
+   5.  Requirements extracted from sustainability-insights uses cases
    6.  Security Considerations
    7.  IANA Considerations
    8.  Informative References
@@ -88,16 +91,169 @@ Table of Contents
 
 1.  Introduction
 
-   This memo extracts and groups requirements from the drafts which
-   provided material [GREEN-BOF], [sustainability-insights],
-   [legacy-path] and [rfc6988bis-green] to the green BoF.  The aim is to
-   determine initial sets of requirements actionable at different levels
-   of the framework [last-charter].
+   This memo extracts and groups requirements from the revisit of
+   operator's requirements made in the last charter refinement work
+   [charter-refinement] and from the drafts which provided material
+   [GREEN-BOF], [sustainability-insights], [legacy-path] and
+   [rfc6988bis-green] to the green BoF.  The aim is to determine initial
+   sets of requirements actionable at different levels of the framework
+   presented in [charter-refinement].
 
    The tables below respect the format and the semantic of operators
-   requirements table of [last-charter].
+   requirements table of [charter-refinement].
 
-2.  Requirements extracted from [legacy-path]
+2.  Requirements extracted from [charter-refinement] operator's inputs
+
+   +================+=====================+===================+========+
+   | category       | requirements        | note              |Priority|
+   +================+=====================+===================+========+
+   | Observability  | Component           | Per component     |1       |
+   |                | granularity, e.g.,  | measurement       |        |
+   |                | per line-card,      |                   |        |
+   |                | per-port            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Observability  | Availability of     | Related to        |1       |
+   |                | information on the  | connected device  |        |
+   |                | power consumption   | case              |        |
+   |                | of the device,      |                   |        |
+   |                | without needing     |                   |        |
+   |                | instrumentation     |                   |        |
+   |                | connected to the    |                   |        |
+   |                | infrastructure      |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Observability  | Triggering of       | Alarm             |1??     |
+   |                | alarms when         | notification      |        |
+   |                | consumption         |                   |        |
+   |                | deviate from a      |                   |        |
+   |                | nominal usage       |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Observability  | Improvement of      | Standardized      |1       |
+   |                | metering solutions  | metering??        |        |
+   |                | (finer              |                   |        |
+   |                | granularity,        |                   |        |
+   |                | control of the      |                   |        |
+   |                | energy efficiency   |                   |        |
+   |                | and saving,         |                   |        |
+   |                | interoperability,   |                   |        |
+   |                | exposure)           |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Common definition   | Standard metric   |1       |
+   |                | of energy           |                   |        |
+   |                | efficiency in       |                   |        |
+   |                | network devices/    |                   |        |
+   |                | components          |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Common methodology  | Standard          |2       |
+   |                | of measurements     | methodology       |        |
+   |                | for fair            |                   |        |
+   |                | comparison          |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | How to provide      | Time based,       |2 ??    |
+   |                | accurate figures    | location based    |        |
+   |                | (context of the     | visualization     |        |
+   |                | measurement in      |                   |        |
+   |                | terms of time       |                   |        |
+   |                | period, location,   |                   |        |
+   |                | traffic, etc        |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Database for        | Information       |3       |
+   |                | decision in case    | Correlation       |        |
+   |                | of large data       |                   |        |
+   |                | transfer            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Ability of multi-   | POI Use Case      |3       |
+   |                | layer analysis      |                   |        |
+   |                | (e.g., IP plus      |                   |        |
+   |                | optical)            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control¬Mgmt   | To have devices     | Dynamic Energy    |2       |
+   |                | with elastic power  | Saving            |        |
+   |                | consumption         |                   |        |
+   |                | according to the    |                   |        |
+   |                | carried traffic     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control¬Mgmt   | Support of          | Network Level     |2       |
+   |                | network-wide        | Mgmt              |        |
+   |                | energy saving and   |                   |        |
+   |                | optimization        |                   |        |
+   |                | functions           |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control¬Mgmt   | Support of          | Network Level     |2       |
+   |                | network-wide        | Mgmt              |        |
+   |                | control of energy   |                   |        |
+   |                | optimization APIs,  |                   |        |
+   |                | allowing external   |                   |        |
+   |                | applications to     |                   |        |
+   |                | optimize            |                   |        |
+   |                | consumption         |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control¬Mgmt   | Advanced sleep      | Dynamic Energy    |2       |
+   |                | mode, needing some  | Saving            |        |
+   |                | sort of low power   |                   |        |
+   |                | mode when node is   |                   |        |
+   |                | lightly utilized    |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control¬Mgmt   | Ability to steer    | Traffic           |4       |
+   |                | traffic based on    | Engineering       |        |
+   |                | power savings       |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control¬Mgmt   | Comparison of       | Intent based      |2       |
+   |                | decision vs         | Concept           |        |
+   |                | optimal case        |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control¬Mgmt   | Synchronous query   | Network Level     |2       |
+   |                | support             | Query             |        |
+   +----------------+---------------------+-------------------+--------+
+   | Inventory      | Inventory of power  | Component &       |1       |
+   | Management     | components (of      | Device Level      |        |
+   |                | devices, racks,     |                   |        |
+   |                | etc) including      |                   |        |
+   |                | together            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Interaction    | Inclusion of data   | Data Center Case  |3       |
+   | with other     | center networks in  |                   |        |
+   | domain         | the picture         |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Interaction    | Inclusion of data   | Mobile Network    |3       |
+   | with other     | center networks in  | Case              |        |
+   | domain         | the picture         |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Optimize the        | More renewable    |4       |
+   | & Carbon       | overall CO2         | energy            |        |
+   | Emission       | footprint (i.e.,    |                   |        |
+   |                | energy mix based    |                   |        |
+   |                | on source type)     |                   |        |
+   |                | facilitating the    |                   |        |
+   |                | engineering of PoP  |                   |        |
+   |                | More renewable      |                   |        |
+   |                | energy              |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Support GHG units   | Measurement Units |4       |
+   | & Carbon       |                     |                   |        |
+   | Emission       |                     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Support Energy      | More renewable    |2 ??    |
+   | & Carbon       | units               | energy            |        |
+   | Emission       |                     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | 4                   |                   |        |
+   | & Carbon       |                     |                   |        |
+   | EmissiCarbon,  |                     |                   |        |
+   | renewable      |                     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Accounting of       | Accounting Cost   |4       |
+   | & Carbon       | legacy installed    |                   |        |
+   | Emission       | based GHG/energy    |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Track device/       | Manufacturing,    |4       |
+   | & Carbon       | network Energy      | transport(weight, |        |
+   | Emission       | Consumption Before  | volume, package)  |        |
+   |                | Operation           |                   |        |
+   +----------------+---------------------+-------------------+--------+
+
+                                  Table 1
+
+3.  Requirements extracted from [legacy-path]
 
     +============+============================+===========+==========+
     | category   | requirements               | note      | Priority |
@@ -116,7 +272,7 @@ Table of Contents
     |            | devices                    |           |          |
     +------------+----------------------------+-----------+----------+
 
-                                 Table 1
+                                 Table 2
 
    (i) Avoid control to break the component
 
@@ -125,7 +281,7 @@ Table of Contents
    (iii) network-wide solution must include legacy devices and green-wg
    ready devices
 
-3.  Requirements from [rfc6988bis-green] draft Open Issues
+4.  Requirements from [rfc6988bis-green] draft Open Issues
 
    +===============+=================+=====================+==========+
    | category      | requirements    | note                | Priority |
@@ -153,9 +309,9 @@ Table of Contents
    |               | the energy used |                     |          |
    +---------------+-----------------+---------------------+----------+
 
-                                 Table 2
+                                 Table 3
 
-4.  Requirements extracted from [sustainability-insights] uses cases
+5.  Requirements extracted from [sustainability-insights] uses cases
 
    There are limited to energy consumption vs sustainability
 
@@ -200,147 +356,6 @@ Table of Contents
    |               | granularity           | not in use.    |          |
    +---------------+-----------------------+----------------+----------+
 
-                                  Table 3
-
-5.  Requirements extracted from [last-charter] operator's inputs
-
-   |category|requirements|note|Priority| |:----|:----|:----|:----|
-
-    +================+======================+===================+=====+
-    | Observability  | Component            | Per component     | 1   |
-    |                | granularity, e.g.,   | measurement       |     |
-    |                | per line-card, per-  |                   |     |
-    |                | port                 |                   |     |
-    +================+======================+===================+=====+
-    | Observability  | Availability of      | Related to        | 1   |
-    |                | information on the   | connected device  |     |
-    |                | power consumption of | case              |     |
-    |                | the device, without  |                   |     |
-    |                | needing              |                   |     |
-    |                | instrumentation      |                   |     |
-    |                | connected to the     |                   |     |
-    |                | infrastructure       |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Observability  | Triggering of alarms | Alarm             | 1?? |
-    |                | when consumption     | notification      |     |
-    |                | deviate from a       |                   |     |
-    |                | nominal usage        |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Observability  | Improvement of       | Standardized      | 1   |
-    |                | metering solutions   | metering??        |     |
-    |                | (finer granularity,  |                   |     |
-    |                | control of the       |                   |     |
-    |                | energy efficiency    |                   |     |
-    |                | and saving,          |                   |     |
-    |                | interoperability,    |                   |     |
-    |                | exposure)            |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Analysis       | Common definition of | Standard metric   | 1   |
-    |                | energy efficiency in |                   |     |
-    |                | network devices/     |                   |     |
-    |                | components           |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Analysis       | Common methodology   | Standard          | 2   |
-    |                | of measurements for  | methodology       |     |
-    |                | fair comparison      |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Analysis       | How to provide       | Time based,       | 2   |
-    |                | accurate figures     | location based    | ??  |
-    |                | (context of the      | visualization     |     |
-    |                | measurement in terms |                   |     |
-    |                | of time period,      |                   |     |
-    |                | location, traffic,   |                   |     |
-    |                | etc                  |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Analysis       | Database for         | Information       | 3   |
-    |                | decision in case of  | Correlation       |     |
-    |                | large data transfer  |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Analysis       | Ability of multi-    | POI Use Case      | 3   |
-    |                | layer analysis       |                   |     |
-    |                | (e.g., IP plus       |                   |     |
-    |                | optical)             |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Control¬Mgmt   | To have devices with | Dynamic Energy    | 2   |
-    |                | elastic power        | Saving            |     |
-    |                | consumption          |                   |     |
-    |                | according to the     |                   |     |
-    |                | carried traffic      |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Control¬Mgmt   | Support of network-  | Network Level     | 2   |
-    |                | wide energy saving   | Mgmt              |     |
-    |                | and optimization     |                   |     |
-    |                | functions            |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Control¬Mgmt   | Support of network-  | Network Level     | 2   |
-    |                | wide control of      | Mgmt              |     |
-    |                | energy optimization  |                   |     |
-    |                | APIs, allowing       |                   |     |
-    |                | external             |                   |     |
-    |                | applications to      |                   |     |
-    |                | optimize consumption |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Control¬Mgmt   | Advanced sleep mode, | Dynamic Energy    | 2   |
-    |                | needing some sort of | Saving            |     |
-    |                | low power mode when  |                   |     |
-    |                | node is lightly      |                   |     |
-    |                | utilized             |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Control¬Mgmt   | Ability to steer     | Traffic           | 4   |
-    |                | traffic based on     | Engineering       |     |
-    |                | power savings        |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Control¬Mgmt   | Comparison of        | Intent based      | 2   |
-    |                | decision vs optimal  | Concept           |     |
-    |                | case                 |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Control¬Mgmt   | Synchronous query    | Network Level     | 2   |
-    |                | support              | Query             |     |
-    +----------------+----------------------+-------------------+-----+
-    | Inventory      | Inventory of power   | Component &       | 1   |
-    | Management     | components (of       | Device Level      |     |
-    |                | devices, racks, etc) |                   |     |
-    |                | including together   |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Interaction    | Inclusion of data    | Data Center Case  | 3   |
-    | with other     | center networks in   |                   |     |
-    | domain         | the picture          |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Interaction    | Inclusion of data    | Mobile Network    | 3   |
-    | with other     | center networks in   | Case              |     |
-    | domain         | the picture          |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Sustainability | Optimize the overall | More renewable    | 4   |
-    | & Carbon       | CO2 footprint (i.e., | energy            |     |
-    | Emission       | energy mix based on  |                   |     |
-    |                | source type)         |                   |     |
-    |                | facilitating the     |                   |     |
-    |                | engineering of PoP   |                   |     |
-    |                | More renewable       |                   |     |
-    |                | energy               |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Sustainability | Support GHG units    | Measurement Units | 4   |
-    | & Carbon       |                      |                   |     |
-    | Emission       |                      |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Sustainability | Support Energy units | More renewable    | 2   |
-    | & Carbon       |                      | energy            | ??  |
-    | Emission       |                      |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Sustainability | 4                    |                   |     |
-    | & Carbon       |                      |                   |     |
-    | EmissiCarbon,  |                      |                   |     |
-    | renewable      |                      |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Sustainability | Accounting of legacy | Accounting Cost   | 4   |
-    | & Carbon       | installed based GHG/ |                   |     |
-    | Emission       | energy               |                   |     |
-    +----------------+----------------------+-------------------+-----+
-    | Sustainability | Track device/network | Manufacturing,    | 4   |
-    | & Carbon       | Energy Consumption   | transport(weight, |     |
-    | Emission       | Before Operation     | volume, package)  |     |
-    +----------------+----------------------+-------------------+-----+
-
                                   Table 4
 
 6.  Security Considerations
@@ -353,16 +368,16 @@ Table of Contents
 
 8.  Informative References
 
-   [GREEN-BOF]
-              "BOF proposal for GREEN WG Creation", 10 May 2024,
-              <https://github.com/marisolpalmero/GREEN-bof>.
-
-   [last-charter]
-              "GREEN BOF framework", 20 August 2024,
+   [charter-refinement]
+              "GREEN BOF Charter Refinement discussion", 20 August 2024,
               <https://github.com/marisolpalmero/GREEN-
               bof/blob/main/Meetings/Meeting_0820_2024/
               GREEN%20BOF%20Charter%20Refining%20discussion-
               2024-8-20.pdf>.
+
+   [GREEN-BOF]
+              "BOF proposal for GREEN WG Creation", 10 May 2024,
+              <https://github.com/marisolpalmero/GREEN-bof>.
 
    [legacy-path]
               "Requirements for Energy Efficiency Management", 21 July
