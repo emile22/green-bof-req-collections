@@ -1,7 +1,7 @@
 ---
 title: "Green BoF requirements collections"
 abbrev: "Green BoF requirements collections"
-docname: draft-stephan-green-bof-reqs-collections-01
+docname: draft-stephan-green-bof-reqs-collections-latest
 
 category: info
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
@@ -16,7 +16,7 @@ venue:
   mail: "green-bof@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/green-bof/"
   github: "emile22/green-bof-req-collections"
-  latest: "https://emile22.github.io/green-bof-req-collections/draft-stephan-green-bof-reqs-collections-01.html"
+  latest: "https://emile22.github.io/green-bof-req-collections/draft-stephan-green-bof-reqs-collections.html"
 
 v: 3
 
