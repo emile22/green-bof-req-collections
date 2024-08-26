@@ -103,8 +103,9 @@ Table of Contents
 
 2.  Operator'requirements from [charter-refinement] document
 
-   The table below is an ascii art copy of the Operator'requirements
-   table of [charter-refinement] pdf.
+   The table below is a copy of the operator'requirements table of
+   [charter-refinement].  They are based on the inputs received from
+   operators for the GREEN BoF [operators-inputs].
 
    +================+=====================+===================+========+
    | category       | requirements        | note              |Priority|
@@ -385,6 +386,11 @@ Table of Contents
               "Requirements for Energy Efficiency Management", 21 July
               2024, <https://datatracker.ietf.org/doc/draft-stephan-
               legacy-path-eco-design>.
+
+   [operators-inputs]
+              "Input from Operators to GREEN BoF", 20 July 2024,
+              <https://datatracker.ietf.org/meeting/120/materials/
+              slides-120-green-input-from-operators-to-green-bof-01>.
 
    [rfc6988bis-green]
               "Requirements for Energy Efficiency Management, 11 years
