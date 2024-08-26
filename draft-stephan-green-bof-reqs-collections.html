@@ -1147,19 +1147,22 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-requirements-extracted-from-" class="internal xref">Requirements extracted from sustainability-insights uses cases</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-requirements-extracted-from-o" class="internal xref">Requirements extracted from last-charter operator's inputs</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
-            <p id="section-toc.1-1.9.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.9.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
+            <p id="section-toc.1-1.10.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1310,26 +1313,192 @@ svg :is([fill="white"], [fill^="#fff"]) {
       </table>
 </section>
 </div>
-<div id="security-considerations">
+<div id="requirements-extracted-from-last-charter-operators-inputs">
 <section id="section-5">
-      <h2 id="name-security-considerations">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      <h2 id="name-requirements-extracted-from-o">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-requirements-extracted-from-o" class="section-name selfRef">Requirements extracted from <span class="cite xref">[last-charter]</span> operator's inputs</a>
       </h2>
-<p id="section-5-1">TODO Security<a href="#section-5-1" class="pilcrow">¶</a></p>
+<p id="section-5-1">|category|requirements|note|Priority|
+|:----|:----|:----|:----|<a href="#section-5-1" class="pilcrow">¶</a></p>
+<table class="center" id="table-4">
+        <caption><a href="#table-4" class="selfRef">Table 4</a></caption>
+<thead>
+          <tr>
+            <th class="text-left" rowspan="1" colspan="1">Observability</th>
+            <th class="text-left" rowspan="1" colspan="1">Component granularity, e.g., per line-card, per-port</th>
+            <th class="text-left" rowspan="1" colspan="1">Per component measurement</th>
+            <th class="text-left" rowspan="1" colspan="1">1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Observability</td>
+            <td class="text-left" rowspan="1" colspan="1">Availability of information on the power consumption of the device, without needing instrumentation connected to the infrastructure</td>
+            <td class="text-left" rowspan="1" colspan="1">Related to connected device case</td>
+            <td class="text-left" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Observability</td>
+            <td class="text-left" rowspan="1" colspan="1">Triggering of alarms when consumption deviate from a nominal usage</td>
+            <td class="text-left" rowspan="1" colspan="1">Alarm notification</td>
+            <td class="text-left" rowspan="1" colspan="1">1??</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Observability</td>
+            <td class="text-left" rowspan="1" colspan="1">Improvement of metering solutions (finer granularity, control of the energy efficiency and saving, interoperability, exposure)</td>
+            <td class="text-left" rowspan="1" colspan="1">Standardized metering??</td>
+            <td class="text-left" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Analysis</td>
+            <td class="text-left" rowspan="1" colspan="1">Common definition of energy efficiency in network devices/components</td>
+            <td class="text-left" rowspan="1" colspan="1">Standard metric</td>
+            <td class="text-left" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Analysis</td>
+            <td class="text-left" rowspan="1" colspan="1">Common methodology of measurements for fair comparison</td>
+            <td class="text-left" rowspan="1" colspan="1">Standard methodology</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Analysis</td>
+            <td class="text-left" rowspan="1" colspan="1">How to provide accurate figures (context of the measurement in terms of time period, location, traffic, etc</td>
+            <td class="text-left" rowspan="1" colspan="1">Time based, location based visualization</td>
+            <td class="text-left" rowspan="1" colspan="1">2 ??</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Analysis</td>
+            <td class="text-left" rowspan="1" colspan="1">Database for decision in case of large data transfer</td>
+            <td class="text-left" rowspan="1" colspan="1">Information Correlation</td>
+            <td class="text-left" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Analysis</td>
+            <td class="text-left" rowspan="1" colspan="1">Ability of multi-layer analysis (e.g., IP plus optical)</td>
+            <td class="text-left" rowspan="1" colspan="1">POI Use Case</td>
+            <td class="text-left" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Control¬Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">To have devices with elastic power consumption according to the carried traffic</td>
+            <td class="text-left" rowspan="1" colspan="1">Dynamic Energy Saving</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Control¬Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">Support of network-wide energy saving and optimization functions</td>
+            <td class="text-left" rowspan="1" colspan="1">Network Level Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Control¬Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">Support of network-wide control of energy optimization APIs, allowing external applications to optimize consumption</td>
+            <td class="text-left" rowspan="1" colspan="1">Network Level Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Control¬Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">Advanced sleep mode, needing some sort of low power mode when node is lightly utilized</td>
+            <td class="text-left" rowspan="1" colspan="1">Dynamic Energy Saving</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Control¬Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">Ability to steer traffic based on power savings</td>
+            <td class="text-left" rowspan="1" colspan="1">Traffic Engineering</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Control¬Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">Comparison of decision vs optimal case</td>
+            <td class="text-left" rowspan="1" colspan="1">Intent based Concept</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Control¬Mgmt</td>
+            <td class="text-left" rowspan="1" colspan="1">Synchronous query support</td>
+            <td class="text-left" rowspan="1" colspan="1">Network Level Query</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Inventory Management</td>
+            <td class="text-left" rowspan="1" colspan="1">Inventory of power components (of devices, racks, etc) including together</td>
+            <td class="text-left" rowspan="1" colspan="1">Component &amp; Device Level</td>
+            <td class="text-left" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Interaction with other domain</td>
+            <td class="text-left" rowspan="1" colspan="1">Inclusion of data center networks in the picture</td>
+            <td class="text-left" rowspan="1" colspan="1">Data Center Case</td>
+            <td class="text-left" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Interaction with other domain</td>
+            <td class="text-left" rowspan="1" colspan="1">Inclusion of data center networks in the picture</td>
+            <td class="text-left" rowspan="1" colspan="1">Mobile Network Case</td>
+            <td class="text-left" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Sustainability &amp; Carbon Emission</td>
+            <td class="text-left" rowspan="1" colspan="1">Optimize the overall CO2 footprint (i.e., energy mix based on source type) facilitating the engineering of PoP More renewable energy</td>
+            <td class="text-left" rowspan="1" colspan="1">More renewable energy</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Sustainability &amp; Carbon Emission</td>
+            <td class="text-left" rowspan="1" colspan="1">Support GHG units</td>
+            <td class="text-left" rowspan="1" colspan="1">Measurement Units</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Sustainability &amp; Carbon Emission</td>
+            <td class="text-left" rowspan="1" colspan="1">Support Energy units</td>
+            <td class="text-left" rowspan="1" colspan="1">More renewable energy</td>
+            <td class="text-left" rowspan="1" colspan="1">2 ??</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Sustainability &amp; Carbon EmissiCarbon, renewable</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
+            <td class="text-left" rowspan="1" colspan="1"> </td>
+            <td class="text-left" rowspan="1" colspan="1"> </td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Sustainability &amp; Carbon Emission</td>
+            <td class="text-left" rowspan="1" colspan="1">Accounting of legacy installed based GHG/energy</td>
+            <td class="text-left" rowspan="1" colspan="1">Accounting Cost</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Sustainability &amp; Carbon Emission</td>
+            <td class="text-left" rowspan="1" colspan="1">Track device/network Energy Consumption Before Operation</td>
+            <td class="text-left" rowspan="1" colspan="1">Manufacturing, transport(weight, volume, package)</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
+          </tr>
+        </tbody>
+      </table>
+</section>
+</div>
+<div id="security-considerations">
+<section id="section-6">
+      <h2 id="name-security-considerations">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      </h2>
+<p id="section-6-1">TODO Security<a href="#section-6-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
-<section id="section-6">
+<section id="section-7">
       <h2 id="name-iana-considerations">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
-<p id="section-6-1">This document has no IANA actions.<a href="#section-6-1" class="pilcrow">¶</a></p>
+<p id="section-7-1">This document has no IANA actions.<a href="#section-7-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-informative-references">
-<section id="section-7">
+<section id="section-8">
       <h2 id="name-informative-references">
-<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
       </h2>
 <dl class="references">
 <dt id="GREEN-BOF">[GREEN-BOF]</dt>
