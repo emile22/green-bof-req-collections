@@ -64,7 +64,7 @@ informative:
     title: "Input from Operators to GREEN BoF"
     date: 2024-07-20
     target: "https://datatracker.ietf.org/meeting/120/materials/slides-120-green-input-from-operators-to-green-bof-01"
-    
+
 --- abstract
 
 This memo extracts and groups requirements from the revisit of  operator's requirements made in the last charter refinement work and from the drafts which provided material to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework.
@@ -83,8 +83,7 @@ The tables below respect the format and the semantic of operators requirements t
 
 # Operator'requirements from [charter-refinement] document
 
-The table below is a copy of the operator'requirements table of [charter-refinement]. They are based on the 
-inputs received from operators for the GREEN BoF [operators-inputs].
+The table below is a copy of the operator'requirements table of [charter-refinement]. They are based on the inputs received from operators for the GREEN BoF [operators-inputs].
 
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
