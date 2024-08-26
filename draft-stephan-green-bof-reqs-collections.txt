@@ -78,8 +78,7 @@ Copyright Notice
 Table of Contents
 
    1.  Introduction
-   2.  Requirements extracted from charter-refinement operator's
-           inputs
+   2.  Operator'requirements from charter-refinement document
    3.  Requirements extracted from legacy-path
    4.  Requirements from rfc6988bis-green draft Open Issues
    5.  Requirements extracted from sustainability-insights uses cases
@@ -102,7 +101,10 @@ Table of Contents
    The tables below respect the format and the semantic of operators
    requirements table of [charter-refinement].
 
-2.  Requirements extracted from [charter-refinement] operator's inputs
+2.  Operator'requirements from [charter-refinement] document
+
+   The table below is an ascii art copy of the Operator'requirements
+   table of [charter-refinement] pdf.
 
    +================+=====================+===================+========+
    | category       | requirements        | note              |Priority|
