@@ -5,8 +5,8 @@
 Getting Ready for Energy-Efficient Networking                 E. Stephan
 Internet-Draft                                                    Orange
 Intended status: Informational                                M. Palmero
-Expires: 27 February 2025                                  Cisco Systems
-                                                          26 August 2024
+Expires: 28 February 2025                                  Cisco Systems
+                                                          27 August 2024
 
 
                    Green BoF requirements collections
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 February 2025.
+   This Internet-Draft will expire on 28 February 2025.
 
 Copyright Notice
 
@@ -169,19 +169,19 @@ Table of Contents
    |                | (e.g., IP plus      |                   |        |
    |                | optical)            |                   |        |
    +----------------+---------------------+-------------------+--------+
-   | Control¬Mgmt   | To have devices     | Dynamic Energy    |2       |
+   | Control& Mgmt  | To have devices     | Dynamic Energy    |2       |
    |                | with elastic power  | Saving            |        |
    |                | consumption         |                   |        |
    |                | according to the    |                   |        |
    |                | carried traffic     |                   |        |
    +----------------+---------------------+-------------------+--------+
-   | Control¬Mgmt   | Support of          | Network Level     |2       |
+   | Control& Mgmt  | Support of          | Network Level     |2       |
    |                | network-wide        | Mgmt              |        |
    |                | energy saving and   |                   |        |
    |                | optimization        |                   |        |
    |                | functions           |                   |        |
    +----------------+---------------------+-------------------+--------+
-   | Control¬Mgmt   | Support of          | Network Level     |2       |
+   | Control& Mgmt  | Support of          | Network Level     |2       |
    |                | network-wide        | Mgmt              |        |
    |                | control of energy   |                   |        |
    |                | optimization APIs,  |                   |        |
@@ -190,21 +190,21 @@ Table of Contents
    |                | optimize            |                   |        |
    |                | consumption         |                   |        |
    +----------------+---------------------+-------------------+--------+
-   | Control¬Mgmt   | Advanced sleep      | Dynamic Energy    |2       |
+   | Control& Mgmt  | Advanced sleep      | Dynamic Energy    |2       |
    |                | mode, needing some  | Saving            |        |
    |                | sort of low power   |                   |        |
    |                | mode when node is   |                   |        |
    |                | lightly utilized    |                   |        |
    +----------------+---------------------+-------------------+--------+
-   | Control¬Mgmt   | Ability to steer    | Traffic           |4       |
+   | Control& Mgmt  | Ability to steer    | Traffic           |4       |
    |                | traffic based on    | Engineering       |        |
    |                | power savings       |                   |        |
    +----------------+---------------------+-------------------+--------+
-   | Control¬Mgmt   | Comparison of       | Intent based      |2       |
+   | Control& Mgmt  | Comparison of       | Intent based      |2       |
    |                | decision vs         | Concept           |        |
    |                | optimal case        |                   |        |
    +----------------+---------------------+-------------------+--------+
-   | Control¬Mgmt   | Synchronous query   | Network Level     |2       |
+   | Control& Mgmt  | Synchronous query   | Network Level     |2       |
    |                | support             | Query             |        |
    +----------------+---------------------+-------------------+--------+
    | Inventory      | Inventory of power  | Component &       |1       |
