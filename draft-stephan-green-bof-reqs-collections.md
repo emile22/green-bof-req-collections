@@ -96,13 +96,13 @@ The table below is a copy of the operator'requirements table of [charter-refinem
 |Analysis|How to provide accurate figures (context of the measurement in terms of time period, location, traffic, etc|Time based, location based visualization|2 ??|
 |Analysis|Database for decision in case of large data transfer|Information Correlation|3|
 |Analysis|Ability of multi-layer analysis (e.g., IP plus optical)|POI Use Case|3|
-|Control¬Mgmt|To have devices with elastic power consumption according to the carried traffic|Dynamic Energy Saving|2|
-|Control¬Mgmt|Support of network-wide energy saving and optimization functions|Network Level Mgmt|2|
-|Control¬Mgmt|Support of network-wide control of energy optimization APIs, allowing external applications to optimize consumption|Network Level Mgmt|2|
-|Control¬Mgmt|Advanced sleep mode, needing some sort of low power mode when node is lightly utilized|Dynamic Energy Saving|2|
-|Control¬Mgmt|Ability to steer traffic based on power savings|Traffic Engineering|4|
-|Control¬Mgmt|Comparison of decision vs optimal case|Intent based Concept|2|
-|Control¬Mgmt|Synchronous query support|Network Level Query|2|
+|Control& Mgmt|To have devices with elastic power consumption according to the carried traffic|Dynamic Energy Saving|2|
+|Control& Mgmt|Support of network-wide energy saving and optimization functions|Network Level Mgmt|2|
+|Control& Mgmt|Support of network-wide control of energy optimization APIs, allowing external applications to optimize consumption|Network Level Mgmt|2|
+|Control& Mgmt|Advanced sleep mode, needing some sort of low power mode when node is lightly utilized|Dynamic Energy Saving|2|
+|Control& Mgmt|Ability to steer traffic based on power savings|Traffic Engineering|4|
+|Control& Mgmt|Comparison of decision vs optimal case|Intent based Concept|2|
+|Control& Mgmt|Synchronous query support|Network Level Query|2|
 |Inventory Management|Inventory of power components (of devices, racks, etc) including together|Component & Device Level|1|
 |Interaction with other domain|Inclusion of data center networks in the picture|Data Center Case|3|
 |Interaction with other domain|Inclusion of data center networks in the picture|Mobile Network Case|3|
