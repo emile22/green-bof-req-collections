@@ -150,19 +150,58 @@ There are limited to energy consumption vs sustainability
 
 # Framework
 
-
-       Discovery
-       Or Inventory  ▲             ▲
-       Of identity   │  Monitor    │
-       Inventory of  │  Energy     │
-       Capability    │  Efficiency │
-                     │             │
-                     │             │
-     ┌───────────────┴─────────────┴──────────────────────┐
-     │                                                    │
-     │   ontroller * (collection, compute and aggregate?) │
-     │                                                    │
-     └────────────────────────────────────────────────────┘
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+   Discovery                                                       │
+   Or Inventory  ▲             ▲                                   │
+   Of identity   │  Monitor    │                                   │
+   Inventory of  │  Energy     │                                   │
+   Capability    │  Efficiency │                                   │
+                 │             │                                   │
+                 │             │                                   │
+ ┌───────────────┴─────────────┴──────────────────────┐            │
+ │                                                    │            │
+ │   ontroller * (collection, compute and aggregate?) │            │
+ │                                                    │            │
+ └────────────────────────────────────────────────────┘            │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                      ─                                            │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
+                                                                   │
 
 TODO Security
 
