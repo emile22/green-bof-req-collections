@@ -150,7 +150,7 @@ There are limited to energy consumption vs sustainability
 
 # Framework
 
-                                                                   |
+|                                                                  |
    Discovery                                                       │
    Or Inventory  ▲             ▲                                   │
    Of identity   │  Monitor    │                                   │
@@ -163,6 +163,8 @@ There are limited to energy consumption vs sustainability
  │  controller * (collection, compute and aggregate?) │            │
  │                                                    │            │
  └────────────────────────────────────────────────────┘            │
+|                                                                  |
+|                                                                     |
 
 
 TODO Security
