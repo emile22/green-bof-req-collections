@@ -148,7 +148,28 @@ There are limited to energy consumption vs sustainability
 |Power Optimization | Provide KPIs for energy efficiency parameters. Perform actions to reduce energy consumption | Monitor network and application performance to optimize power usage | 4 |
 |Control& Mgmt Switch off | Stop and restart WiFi APs with the right time, space, and service granularity | Save power consumption during periods when APs are not in use.| 2|
 
-# Security Considerations
+# Framework
+
+                                                              
+                                                              
+                                                              
+       Discovery                                              
+       Or Inventory  ▲             ▲                          
+       Of identity   │  Monitor    │                          
+       Inventory of  │  Energy     │                          
+       Capability    │  Efficiency │                          
+                     │             │                          
+                     │             │                          
+     ┌───────────────┴─────────────┴──────────────────────┐   
+     │                                                    │   
+     │   ontroller * (collection, compute and aggregate?) │   
+     │                                                    │   
+     └────────────────────────────────────────────────────┘   
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
 
 TODO Security
 
