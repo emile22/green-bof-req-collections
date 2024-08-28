@@ -363,11 +363,11 @@ Table of Contents
 
 6.  Framework
 
-   ''' | | Discovery │ Or Inventory ▲ ▲ │ Of identity │ Monitor │ │
+   | | Discovery │ Or Inventory ▲ ▲ │ Of identity │ Monitor │ │
    Inventory of │ Energy │ │ Capability │ Efficiency │ │ │ │ │ │ │ │
    ┌───────────────┴─────────────┴──────────────────────┐ │ │ │ │ │
    controller * (collection, compute and aggregate?) │ │ │ │ │
-   └────────────────────────────────────────────────────┘ │ | | | | '''
+   └────────────────────────────────────────────────────┘ │ | | | |
 
    TODO Security
 
