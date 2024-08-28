@@ -149,8 +149,7 @@ There are limited to energy consumption vs sustainability
 |Control& Mgmt Switch off | Stop and restart WiFi APs with the right time, space, and service granularity | Save power consumption during periods when APs are not in use.| 2|
 
 # Framework
-```
-|                                                                  |
+
    Discovery                                                       │
    Or Inventory  ▲             ▲                                   │
    Of identity   │  Monitor    │                                   │
@@ -163,11 +162,8 @@ There are limited to energy consumption vs sustainability
  │  controller * (collection, compute and aggregate?) │            │
  │                                                    │            │
  └────────────────────────────────────────────────────┘            │
-|                                                                  |
-|                                                                     |
-```
 
-TODO Security
+# TODO Security
 
 # IANA Considerations
 
