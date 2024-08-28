@@ -83,8 +83,9 @@ Table of Contents
    4.  Requirements from rfc6988bis-green draft Open Issues
    5.  Requirements extracted from sustainability-insights uses cases
    6.  Framework
-   7.  IANA Considerations
-   8.  Informative References
+   7.  TODO Security
+   8.  IANA Considerations
+   9.  Informative References
    Acknowledgments
    Authors' Addresses
 
@@ -363,19 +364,19 @@ Table of Contents
 
 6.  Framework
 
-   | | Discovery │ Or Inventory ▲ ▲ │ Of identity │ Monitor │ │
-   Inventory of │ Energy │ │ Capability │ Efficiency │ │ │ │ │ │ │ │
+   Discovery │ Or Inventory ▲ ▲ │ Of identity │ Monitor │ │ Inventory of
+   │ Energy │ │ Capability │ Efficiency │ │ │ │ │ │ │ │
    ┌───────────────┴─────────────┴──────────────────────┐ │ │ │ │ │
    controller * (collection, compute and aggregate?) │ │ │ │ │
-   └────────────────────────────────────────────────────┘ │ | | | |
+   └────────────────────────────────────────────────────┘ │
 
-   TODO Security
+7.  TODO Security
 
-7.  IANA Considerations
+8.  IANA Considerations
 
    This document has no IANA actions.
 
-8.  Informative References
+9.  Informative References
 
    [charter-refinement]
               "GREEN BOF Charter Refinement discussion", 20 August 2024,
