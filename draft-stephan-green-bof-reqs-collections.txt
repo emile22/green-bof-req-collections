@@ -5,8 +5,8 @@
 Getting Ready for Energy-Efficient Networking                 E. Stephan
 Internet-Draft                                                    Orange
 Intended status: Informational                                M. Palmero
-Expires: 28 February 2025                                  Cisco Systems
-                                                          27 August 2024
+Expires: 1 March 2025                                      Cisco Systems
+                                                          28 August 2024
 
 
                    Green BoF requirements collections
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 28 February 2025.
+   This Internet-Draft will expire on 1 March 2025.
 
 Copyright Notice
 
@@ -82,7 +82,7 @@ Table of Contents
    3.  Requirements extracted from legacy-path
    4.  Requirements from rfc6988bis-green draft Open Issues
    5.  Requirements extracted from sustainability-insights uses cases
-   6.  Security Considerations
+   6.  Framework
    7.  IANA Considerations
    8.  Informative References
    Acknowledgments
@@ -361,7 +361,20 @@ Table of Contents
 
                                   Table 4
 
-6.  Security Considerations
+6.  Framework
+
+      Discovery
+      Or Inventory  ▲             ▲
+      Of identity   │  Monitor    │
+      Inventory of  │  Energy     │
+      Capability    │  Efficiency │
+                    │             │
+                    │             │
+    ┌───────────────┴─────────────┴──────────────────────┐
+    │                                                    │
+    │   ontroller * (collection, compute and aggregate?) │
+    │                                                    │
+    └────────────────────────────────────────────────────┘
 
    TODO Security
 
