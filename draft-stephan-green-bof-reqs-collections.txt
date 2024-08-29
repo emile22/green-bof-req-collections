@@ -364,34 +364,52 @@ Table of Contents
 
 6.  Framework
 
-   ```
-
-   What needs to be standardized for Framework
+        What needs to be standardized for Framework
 
 
-                     +->DataSheets/DataBase and/or via APIEnergy Network Level :          ¦  Metadata and other device/component
-                     ¦  / network related information:
-                     ¦ Discovery                ¦  .Power/Energy related metrics Or Inventory  (i) Monitor¦  .information Of identity    Energy    ¦  .origin of Energy Mix Inventory of   Efficiency¦  .carbon aware based on location Capability         ^     ¦
- ^             ¦     ¦
- ¦             ¦     ¦
- ¦             ¦     ¦
- ¦             ¦     ¦
- ¦             ¦     ¦ +-------------------------------------------------------------------+ ¦            *                                                      ¦ ¦  controller   (collection, compute and aggregate?)                ¦ ¦                                                                   ¦ +-------------------------------------------------------------------+
-        ^               ^                   ^ ¦
-        ¦               ¦                   ¦ ¦ Discovery   ¦  IPPM WG:     ¦ GREEN WG:         ¦ ¦ GREEN WG: Control Or Inventory¦  Monitor      ¦ Monitor power     ¦ ¦ (Energy saving Of identity ¦  Network      ¦ Proportion,       ¦ ¦ Functionality Inventory of¦  Performance  ¦ Energy efficiency ¦ ¦ Localized mgmt Capability  ¦  (Throughput, ¦ ratio, Maximum    ¦ ¦ /network wide mgmt)
-        ¦  Traffic load,¦ sleep time, etc)  ¦ ¦
-        ¦  etc)         ¦                   ¦ v
+                          +->DataSheets/DataBase and/or via APIEnergy
+ Network Level :          ¦  Metadata and other device/component
+                          ¦  / network related information:
+                          ¦
+ Discovery                ¦  .Power/Energy related metrics
+ Or Inventory  (i) Monitor¦  .information
+ Of identity    Energy    ¦  .origin of Energy Mix
+ Inventory of   Efficiency¦  .carbon aware based on location
+ Capability         ^     ¦
+      ^             ¦     ¦
+      ¦             ¦     ¦
+      ¦             ¦     ¦
+      ¦             ¦     ¦
+      ¦             ¦     ¦
+ +-------------------------------------------------------------------+
+ ¦            *                                                      ¦
+ ¦  controller   (collection, compute and aggregate?)                ¦
+ ¦                                                                   ¦
+ +-------------------------------------------------------------------+
+             ^               ^                   ^ ¦
+             ¦               ¦                   ¦ ¦
+ Discovery   ¦  IPPM WG:     ¦ GREEN WG:         ¦ ¦ GREEN WG: Control
+ Or Inventory¦  Monitor      ¦ Monitor power     ¦ ¦ (Energy saving
+ Of identity ¦  Network      ¦ Proportion,       ¦ ¦ Functionality
+ Inventory of¦  Performance  ¦ Energy efficiency ¦ ¦ Localized mgmt
+ Capability  ¦  (Throughput, ¦ ratio, Maximum    ¦ ¦ /network wide mgmt)
+             ¦  Traffic load,¦ sleep time, etc)  ¦ ¦
+             ¦  etc)         ¦                   ¦ v
 
-   +-------------------------------------------------------------------+
-   ¦ Device/Component Level * ¦ ¦ ¦ ¦ +--------+ +----------+
-   +--------------+ +----------+ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦Network ¦ ¦
-   Device ¦ ¦Legacy Network¦ ¦'Attached'¦ ¦ ¦ ¦Device ¦ ¦ Component¦ ¦
-   Device ¦ ¦ Device ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦(PoE kind)¦ ¦ ¦ +--------+
-   +----------+ +--------------+ +----------+ ¦ ¦ ¦
-   +-------------------------------------------------------------------+
+ +-------------------------------------------------------------------+
+ ¦                   Device/Component Level *                        ¦
+ ¦                                                                   ¦
+ ¦  +--------+    +----------+    +--------------+    +----------+   ¦
+ ¦  ¦        ¦    ¦          ¦    ¦              ¦    ¦          ¦   ¦
+ ¦  ¦Network ¦    ¦ Device   ¦    ¦Legacy Network¦    ¦'Attached'¦   ¦
+ ¦  ¦Device  ¦    ¦ Component¦    ¦   Device     ¦    ¦  Device  ¦   ¦
+ ¦  ¦        ¦    ¦          ¦    ¦              ¦    ¦(PoE kind)¦   ¦
+ ¦  +--------+    +----------+    +--------------+    +----------+   ¦
+ ¦                                                                   ¦
+ +-------------------------------------------------------------------+
 
-   (*) Energy Efficiency Management Function is implemented inside the
-   device or in a controller ```
+   (*) Energy Efficiency Management Function
+       is implemented inside the device or in a controller
 
 7.  TODO Security
 
