@@ -198,7 +198,7 @@ Capability  ¦  (Throughput, ¦ ratio, Maximum    ¦ ¦ /network wide mgmt)
   (*) Energy Efficiency Management Function
       is implemented inside the device or in a controller
 ```
-                                                                       
+                                                                    
 # TODO Security
 
 # IANA Considerations
