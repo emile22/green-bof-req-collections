@@ -5,8 +5,8 @@
 Getting Ready for Energy-Efficient Networking                 E. Stephan
 Internet-Draft                                                    Orange
 Intended status: Informational                                M. Palmero
-Expires: 1 March 2025                                      Cisco Systems
-                                                          28 August 2024
+Expires: 2 March 2025                                      Cisco Systems
+                                                          29 August 2024
 
 
                    Green BoF requirements collections
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 1 March 2025.
+   This Internet-Draft will expire on 2 March 2025.
 
 Copyright Notice
 
@@ -364,11 +364,34 @@ Table of Contents
 
 6.  Framework
 
-   Discovery │ Or Inventory ▲ ▲ │ Of identity │ Monitor │ │ Inventory of
-   │ Energy │ │ Capability │ Efficiency │ │ │ │ │ │ │ │
-   ┌───────────────┴─────────────┴──────────────────────┐ │ │ │ │ │
-   controller * (collection, compute and aggregate?) │ │ │ │ │
-   └────────────────────────────────────────────────────┘ │
+   ```
+
+   What needs to be standardized for Framework
+
+
+                     +->DataSheets/DataBase and/or via APIEnergy Network Level :          ¦  Metadata and other device/component
+                     ¦  / network related information:
+                     ¦ Discovery                ¦  .Power/Energy related metrics Or Inventory  (i) Monitor¦  .information Of identity    Energy    ¦  .origin of Energy Mix Inventory of   Efficiency¦  .carbon aware based on location Capability         ^     ¦
+ ^             ¦     ¦
+ ¦             ¦     ¦
+ ¦             ¦     ¦
+ ¦             ¦     ¦
+ ¦             ¦     ¦ +-------------------------------------------------------------------+ ¦            *                                                      ¦ ¦  controller   (collection, compute and aggregate?)                ¦ ¦                                                                   ¦ +-------------------------------------------------------------------+
+        ^               ^                   ^ ¦
+        ¦               ¦                   ¦ ¦ Discovery   ¦  IPPM WG:     ¦ GREEN WG:         ¦ ¦ GREEN WG: Control Or Inventory¦  Monitor      ¦ Monitor power     ¦ ¦ (Energy saving Of identity ¦  Network      ¦ Proportion,       ¦ ¦ Functionality Inventory of¦  Performance  ¦ Energy efficiency ¦ ¦ Localized mgmt Capability  ¦  (Throughput, ¦ ratio, Maximum    ¦ ¦ /network wide mgmt)
+        ¦  Traffic load,¦ sleep time, etc)  ¦ ¦
+        ¦  etc)         ¦                   ¦ v
+
+   +-------------------------------------------------------------------+
+   ¦ Device/Component Level * ¦ ¦ ¦ ¦ +--------+ +----------+
+   +--------------+ +----------+ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦Network ¦ ¦
+   Device ¦ ¦Legacy Network¦ ¦'Attached'¦ ¦ ¦ ¦Device ¦ ¦ Component¦ ¦
+   Device ¦ ¦ Device ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦(PoE kind)¦ ¦ ¦ +--------+
+   +----------+ +--------------+ +----------+ ¦ ¦ ¦
+   +-------------------------------------------------------------------+
+
+   (*) Energy Efficiency Management Function is implemented inside the
+   device or in a controller ```
 
 7.  TODO Security
 
