@@ -149,7 +149,8 @@ There are limited to energy consumption vs sustainability
 |Control& Mgmt Switch off | Stop and restart WiFi APs with the right time, space, and service granularity | Save power consumption during periods when APs are not in use.| 2|
 
 # Framework
-```
+
+~~~~
 
        What needs to be standardized for Framework
 
@@ -197,7 +198,7 @@ Capability  ¦  (Throughput, ¦ ratio, Maximum    ¦ ¦ /network wide mgmt)
 
   (*) Energy Efficiency Management Function
       is implemented inside the device or in a controller
-```
+~~~~
 
 # TODO Security
 
