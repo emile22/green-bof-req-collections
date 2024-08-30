@@ -201,7 +201,6 @@ The overall framework is shown in {{green-framework}}.
  device or in a controller
 
 ~~~~
-
 {: #green-framework title="Framework discussed during the BoF"}
 
 # TODO Security
