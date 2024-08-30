@@ -199,6 +199,7 @@ The overall framework is shown in {{green-framework}}.
  (*) Energy Efficiency Management Function is implemented inside the    
  device or in a controller                                                                                                                      
 ~~~~
+
 {: #green-framework title="Framework discussed during the BoF"}
 
 # TODO Security
