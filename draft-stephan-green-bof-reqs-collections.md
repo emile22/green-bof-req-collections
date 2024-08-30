@@ -152,51 +152,52 @@ There are limited to energy consumption vs sustainability
 The overall framework is shown in {{green-framework}}.
 
 ~~~~
-        What needs to be standardized for Framework                     
-                                                                        
-                                                                        
- (3) Network Level :                                                    
-                                                                        
- (a) Discovery (b) Monitor   ┌─>(c) DataSheets/DataBase and/or via API  
- Or Inventory   Energy       │     Metadata and other device/component  
- Of identity    Efficiency   │     /network related information:        
- Inventory of                │                                          
- Capability         ^        │     .Power/Energy related metrics        
-      ^             │        │     .information                         
-      │             │        │     .origin of Energy Mix                
-      │             │        │     .carbon aware based on location      
-      │             │        │                                          
-      │             │        │                                          
-      │             │        │                                          
-      │             │        │                                          
- ┌────────────────────────────────────────────────────────────────────┐ 
- │                   *                                                │ 
- │     (2) controller   (collection, compute and aggregate?)          │ 
- │                                                                    │ 
- └────────────────────────────────────────────────────────────────────┘ 
-              ^              ^                   ^ │                    
-  (d)         │  (e)         │  (f)              │ │(g)                 
-  Discovery   │  IPPM WG:    │  GREEN WG:        │ │GREEN WG: Control   
-  Or Inventory│  Monitor     │  Monitor power    │ │(Energy saving      
-  Of identity │  Network     │  Proportion,      │ │Functionality       
-  Inventory of│  Performance │  Energy efficiency│ │Localized mgmt/     
-  Capability  │  (Throughput,│  ratio, Maximum   │ │network wide mgmt)  
-              │  Traffic load│  sleep time, etc) │ │                    
-              │  ,etc)       │                   │ v                    
-                                                                        
- ┌────────────────────────────────────────────────────────────────────┐ 
- │               (1) Device/Component Level *                         │ 
- │                                                                    │ 
- │ ┌─────────────┐ ┌────────────┐ ┌──────────────┐ ┌────────────────┐ │ 
- │ │             │ │            │ │              │ │                │ │ 
- │ │ (I)Network  │ │ (II)Device │ │ (III) Legacy │ │ (IV)'Attached' │ │ 
- │ │   Device    │ │  Component │ │Network Device│ │    Device      │ │ 
- │ │             │ │            │ │              │ │  (PoE kind)    │ │ 
- │ └─────────────┘ └────────────┘ └──────────────┘ └────────────────┘ │ 
- │                                                                    │ 
- └────────────────────────────────────────────────────────────────────┘ 
-                                                                        
- (*) Energy Efficiency Management Function is implemented inside the    
+
+        What needs to be standardized for Framework
+
+
+ (3) Network Level :
+
+ (a) Discovery (b) Monitor   +->(c) DataSheets/DataBase and/or via API
+ Or Inventory   Energy       ¦     Metadata and other device/component
+ Of identity    Efficiency   ¦     /network related information:
+ Inventory of                ¦
+ Capability         ^        ¦     .Power/Energy related metrics
+      ^             ¦        ¦     .information
+      ¦             ¦        ¦     .origin of Energy Mix
+      ¦             ¦        ¦     .carbon aware based on location
+      ¦             ¦        ¦
+      ¦             ¦        ¦
+      ¦             ¦        ¦
+      ¦             ¦        ¦
+ +--------------------------------------------------------------------+
+ ¦                   *                                                ¦
+ ¦     (2) controller   (collection, compute and aggregate?)          ¦
+ ¦                                                                    ¦
+ +--------------------------------------------------------------------+
+              ^              ^                   ^ ¦
+  (d)         ¦  (e)         ¦  (f)              ¦ ¦(g)
+  Discovery   ¦  IPPM WG:    ¦  GREEN WG:        ¦ ¦GREEN WG: Control
+  Or Inventory¦  Monitor     ¦  Monitor power    ¦ ¦(Energy saving
+  Of identity ¦  Network     ¦  Proportion,      ¦ ¦Functionality
+  Inventory of¦  Performance ¦  Energy efficiency¦ ¦Localized mgmt/
+  Capability  ¦  (Throughput,¦  ratio, Maximum   ¦ ¦network wide mgmt)
+              ¦  Traffic load¦  sleep time, etc) ¦ ¦
+              ¦  ,etc)       ¦                   ¦ v
+
+ +--------------------------------------------------------------------+
+ ¦               (1) Device/Component Level *                         ¦
+ ¦                                                                    ¦
+ ¦ +-------------+ +------------+ +--------------+ +----------------+ ¦
+ ¦ ¦             ¦ ¦            ¦ ¦              ¦ ¦                ¦ ¦
+ ¦ ¦ (I)Network  ¦ ¦ (II)Device ¦ ¦ (III) Legacy ¦ ¦ (IV)'Attached' ¦ ¦
+ ¦ ¦   Device    ¦ ¦  Component ¦ ¦Network Device¦ ¦    Device      ¦ ¦
+ ¦ ¦             ¦ ¦            ¦ ¦              ¦ ¦  (PoE kind)    ¦ ¦
+ ¦ +-------------+ +------------+ +--------------+ +----------------+ ¦
+ ¦                                                                    ¦
+ +--------------------------------------------------------------------+
+
+ (*) Energy Efficiency Management Function is implemented inside the
  device or in a controller
 
 ~~~~
