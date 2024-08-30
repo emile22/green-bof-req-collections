@@ -371,18 +371,19 @@ Table of Contents
 
   (3) Network Level :
 
-  (a) Discovery (b) Monitor   +->(c) DataSheets/DataBase and/or via API
-  Or Inventory   Energy       ¦     Metadata and other device/component
-  Of identity    Efficiency   ¦     /network related information:
-  Inventory of                ¦
-  Capability         ^        ¦     .Power/Energy related metrics
-       ^             ¦        ¦     .information
-       ¦             ¦        ¦     .origin of Energy Mix
-       ¦             ¦        ¦     .carbon aware based on location
-       ¦             ¦        ¦
-       ¦             ¦        ¦
-       ¦             ¦        ¦
-       ¦             ¦        ¦
+  (a)              (b)             (c)
+  Discovery        Monitor       +->DataSheets/DataBase and/or via API
+  Or Inventory     Energy        ¦  Metadata and other device/component
+  Of identity      Efficiency    ¦  /network related information:
+  Inventory of         ^         ¦
+  Capability           ¦         ¦  .Power/Energy related metrics
+       ^               ¦         ¦  .information
+       ¦               ¦         ¦  .origin of Energy Mix
+       ¦               ¦         ¦  .carbon aware based on location
+       ¦               ¦         ¦
+       ¦               ¦         ¦
+       ¦               ¦         ¦
+       ¦               ¦         ¦
   +--------------------------------------------------------------------+
   ¦                   *                                                ¦
   ¦     (2) controller   (collection, compute and aggregate?)          ¦
@@ -396,18 +397,18 @@ Table of Contents
    Inventory of¦  Performance ¦  Energy efficiency¦ ¦Localized mgmt/
    Capability  ¦  (Throughput,¦  ratio, Maximum   ¦ ¦network wide mgmt)
                ¦  Traffic load¦  sleep time, etc) ¦ ¦
-               ¦  ,etc)       ¦                   ¦ v
-
+               ¦  ,etc)       ¦                   ¦ ¦
+               ¦              ¦                   ¦ v
   +--------------------------------------------------------------------+
-  ¦               (1) Device/Component Level *                         ¦
+  ¦                                            *                       ¦
+  ¦                  (1) Device/Component Level                        ¦
   ¦                                                                    ¦
-  ¦ +-------------+ +------------+ +--------------+ +----------------+ ¦
-  ¦ ¦             ¦ ¦            ¦ ¦              ¦ ¦                ¦ ¦
-  ¦ ¦ (I)Network  ¦ ¦ (II)Device ¦ ¦ (III) Legacy ¦ ¦ (IV)'Attached' ¦ ¦
-  ¦ ¦   Device    ¦ ¦  Component ¦ ¦Network Device¦ ¦    Device      ¦ ¦
-  ¦ ¦             ¦ ¦            ¦ ¦              ¦ ¦  (PoE kind)    ¦ ¦
-  ¦ +-------------+ +------------+ +--------------+ +----------------+ ¦
-  ¦                                                                    ¦
+  ¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
+  ¦ ¦ (I)     ¦  ¦ (II)      ¦  ¦ (III)          ¦  ¦ (IV)           ¦ ¦
+  ¦ ¦ Network ¦  ¦ Device    ¦  ¦ Legacy Network ¦  ¦ 'Attached'(PoE ¦ ¦
+  ¦ ¦ Device  ¦  ¦ Component ¦  ¦ Device         ¦  ¦ kind) Device   ¦ ¦
+  ¦ ¦         ¦  ¦           ¦  ¦                ¦  ¦                ¦ ¦
+  ¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
   +--------------------------------------------------------------------+
 
   (*) Energy Efficiency Management Function is implemented inside the
