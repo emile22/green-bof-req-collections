@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-29T00:42:34.157851+00:00",
+  "timestamp": "2024-09-01T00:51:50.041901+00:00",
   "repo": "emile22/green-bof-req-collections",
   "labels": [
     {
@@ -134,6 +134,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOMnXjEc55_q9f",
+      "title": "fist attempt for the ref architecture requirements covering inventory\u2026",
+      "url": "https://github.com/emile22/green-bof-req-collections/pull/3",
+      "state": "OPEN",
+      "author": "marisolpalmero",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "\u2026&discovery",
+      "createdAt": "2024-08-30T15:50:15Z",
+      "updatedAt": "2024-08-30T15:50:15Z",
+      "baseRepository": "emile22/green-bof-req-collections",
+      "baseRefName": "main",
+      "baseRefOid": "bd45b391cd914dcf74d64ee0f7cd803c0e9a826c",
+      "headRepository": "marisolpalmero/green-bof-req-collections",
+      "headRefName": "main",
+      "headRefOid": "c21642ecdbcd0eb29d1cdd1affedef1793e19514",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
