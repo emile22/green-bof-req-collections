@@ -206,7 +206,7 @@ The overall framework is shown in {{green-framework}}.
 
 The main participants in the framework are as follows:
 
-(a),(d) Inventory and Discovery 
+(a),(d) Inventory and Discovery
 
 (b) Monitor Energy Efficiency
 
@@ -214,14 +214,11 @@ The main participants in the framework are as follows:
 
 (e) Network Performance
 
-(f) Monitor Power 
+(f) Monitor Power
 
 (g) control energy saving
 
-
-
-
-## Inventory and Discovery 
+## Inventory and Discovery
 
 Based on the framework discussed during the BoF, the architectural requirements for the “GREEN” Framework:
 
