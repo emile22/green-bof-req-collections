@@ -231,11 +231,11 @@ Static attributes also include benchmarking information related to energy consum
 - Power allocation
 - Etc.
 
-These attributes might be collected from the device/component itself or they might be parameters as part of external sources, i.e., databases owned by the hardware or software providers, where API access will be preferred. 
+These attributes might be collected from the device/component itself or they might be parameters as part of external sources, i.e., databases owned by the hardware or software providers, where API access will be preferred.
 
 Normally, the “Discovery” process will be updating static attributes that represent the up-to-date inventory of the network. The Discovery process relates primarily to the static attributes, where will consider if a device or component has been replaced or is out of service. The “Operation” process will be updating the so-called dynamic attributes.
 
-Dynamic attributes are those that are subject to change due to the running operations, including configuration and state changes, and they will need to be collected regularly. 
+Dynamic attributes are those that are subject to change due to the running operations, including configuration and state changes, and they will need to be collected regularly.
 
 They will be updated as part of the regular operations. Dynamic attributes might be related to sensors(environmental), traffic, state, etc. They will include attributes like:
 
