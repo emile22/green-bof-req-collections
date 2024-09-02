@@ -213,11 +213,11 @@ The main elements in the framework are as follows:
 
 (a),(d) Inventory and Discovery
 
-(b),(c) GREEN metrics
+(b),(c) GREEN Metrics
 
 (b),(e),(f) Monitor and Performance
 
-(g) Control energy saving
+(g) Control Energy Saving
 
 ## Inventory and Discovery
 
@@ -280,7 +280,7 @@ Even though sensors normally are embedded in the network device/component, there
 
 !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has not been found.
 
-## GREEN metrics
+## GREEN Metrics
 
 Based on the work initiated under {{?I-D.draft-cx-opsawg-green-metrics-02}}, it might be required to prioritise the definition and data models for the metrics relevant to the components and network elements, as they will be the ones influencing the most to the metrics related to flows, path and network.
 
@@ -290,7 +290,7 @@ Monitor and Performance will include the guidelines for the association of the d
 
 The architecture could define a prefer interface, based in YANG as the preferred data model, but should allow enough freedom in the implementation, where any kind of quantity can be measured, any kind of collection protocol and mechanism employed, and the telemetry data flows aggregated using any kind of operation.
 
-## Control energy saving
+## Control Energy Saving
 
 Control will consider how to improve GREEN metrics with the final goal to automate the monitoring, performance and remediation in case of a fault or deviation of the performance defined for the metrics.
 
@@ -305,5 +305,5 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+This version collectes works from the Green Bof proponents: Luis, Marisol, Tony, Qin and Emile and from our coachs Jari, Adrian and Benoit, and from our supporter Tobe
 
