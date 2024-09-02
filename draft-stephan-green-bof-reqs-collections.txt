@@ -83,6 +83,7 @@ Table of Contents
    4.  Requirements from rfc6988bis-green draft Open Issues
    5.  Requirements extracted from sustainability-insights uses cases
    6.  Framework Discussed During the BoF
+     6.1.  Inventory and Discovery
    7.  TODO Security
    8.  IANA Considerations
    9.  Informative References
@@ -416,10 +417,24 @@ Table of Contents
 
               Figure 1: Framework discussed during the BoF
 
+   The main participants in the framework are as follows:
+
+   (a),(d) Inventory and Discovery
+
+   (b) Monitor Energy Efficiency
+
+   (c) DataSheets/DataBase information
+
+   (e) Network Performance
+
+   (f) Monitor Power
+
+   (g) control energy saving
+
+6.1.  Inventory and Discovery
+
    Based on the framework discussed during the BoF, the architectural
    requirements for the “GREEN” Framework:
-
-   (a) Inventory and Discovery level
 
    From a Network Inventory[1] point of view, when discussing Energy
    Efficiency metrics, also known as GREEN metrics, it is important to
