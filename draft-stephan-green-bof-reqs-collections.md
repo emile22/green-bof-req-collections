@@ -213,15 +213,11 @@ The main elements in the framework are as follows:
 
 (a),(d) Inventory and Discovery
 
-(b) Monitor Energy Efficiency
+(b),(c) GREEN metrics
 
-(c) DataSheets/DataBase information
+(b),(e),(f) Monitor and Performance
 
-(e) Network Performance
-
-(f) Monitor Power
-
-(g) control energy saving
+(g) Control energy saving
 
 ## Inventory and Discovery
 
@@ -281,19 +277,22 @@ The data collection frequency might need to be adjusted based on the specific at
 
 Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.
 
-      a collection of data for network devices and their components managed by a specific management system.
 
 !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has not been found.
 
-## Monitor Energy Efficiency
+## GREEN metrics
 
-## DataSheets/DataBase information
+Based on the work initiated under {{?I-D.draft-cx-opsawg-green-metrics-02}}, it might be required to prioritise the definition and data models for the metrics relevant to the components and network elements, as they will be the ones influencing the most to the metrics related to flows, path and network.
 
-## Network Performance
+## Monitor and Performance
 
-## Monitor Power
+Monitor and Performance will include the guidelines for the association of the different attributes that defined the GREEN metrics to compose and aggregate the data collection to formed the reporting
 
-## control energy saving
+The architecture could define a prefer interface, based in YANG as the preferred data model, but should allow enough freedom in the implementation, where any kind of quantity can be measured, any kind of collection protocol and mechanism employed, and the telemetry data flows aggregated using any kind of operation.
+
+## Control energy saving
+
+Control will consider how to improve GREEN metrics with the final goal to automate the monitoring, performance and remediation in case of a fault or deviation of the performance defined for the metrics.
 
 # TODO Security
 
