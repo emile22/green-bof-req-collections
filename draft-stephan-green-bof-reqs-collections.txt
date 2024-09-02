@@ -84,9 +84,9 @@ Table of Contents
    5.  Requirements extracted from sustainability-insights uses cases
    6.  Framework Discussed During the BoF
      6.1.  Inventory and Discovery
-     6.2.  GREEN metrics
+     6.2.  GREEN Metrics
      6.3.  Monitor and Performance
-     6.4.  Control energy saving
+     6.4.  Control Energy Saving
    7.  TODO Security
    8.  IANA Considerations
    9.  Informative References
@@ -424,11 +424,11 @@ Table of Contents
 
    (a),(d) Inventory and Discovery
 
-   (b),(c) GREEN metrics
+   (b),(c) GREEN Metrics
 
    (b),(e),(f) Monitor and Performance
 
-   (g) Control energy saving
+   (g) Control Energy Saving
 
 6.1.  Inventory and Discovery
 
@@ -520,7 +520,7 @@ Table of Contents
    !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has
    not been found.
 
-6.2.  GREEN metrics
+6.2.  GREEN Metrics
 
    Based on the work initiated under
    [I-D.draft-cx-opsawg-green-metrics-02], it might be required to
@@ -542,7 +542,7 @@ Table of Contents
    of collection protocol and mechanism employed, and the telemetry data
    flows aggregated using any kind of operation.
 
-6.4.  Control energy saving
+6.4.  Control Energy Saving
 
    Control will consider how to improve GREEN metrics with the final
    goal to automate the monitoring, performance and remediation in case
@@ -606,7 +606,9 @@ Table of Contents
 
 Acknowledgments
 
-   TODO acknowledge.
+   This version collectes works from the Green Bof proponents: Luis,
+   Marisol, Tony, Qin and Emile and from our coachs Jari, Adrian and
+   Benoit, and from our supporter Tobe
 
 Authors' Addresses
 
