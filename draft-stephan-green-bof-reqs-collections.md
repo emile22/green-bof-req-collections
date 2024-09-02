@@ -66,7 +66,10 @@ informative:
     target: "https://datatracker.ietf.org/meeting/120/materials/slides-120-green-input-from-operators-to-green-bof-01"
 
   network-inventory:
+    title: "YANG Data Model for Network Inventory"  
+    date: 2024-07-20
     target: "https://datatracker.ietf.org/doc/draft-ietf-ivy-network-inventory-yang"
+
 
 --- abstract
 
