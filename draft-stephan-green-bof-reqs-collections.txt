@@ -88,7 +88,7 @@ Table of Contents
      6.3.  DataSheets/DataBase information
      6.4.  Network Performance
      6.5.  Monitor Power
-     6.6.  control energy saving
+     6.6.  Control Energy Saving
    7.  TODO Security
    8.  IANA Considerations
    9.  Informative References
@@ -377,8 +377,8 @@ Table of Contents
 
   (3) Network Level :
 
-  (a)              (b)             (c)
-  Discovery        Monitor       +->DataSheets/DataBase and/or via API
+  (a)              (b)              (c)
+  Discovery        Monitor       +- DataSheets/DataBase and/or via API
   Or Inventory     Energy        ¦  Metadata and other device/component
   Of identity      Efficiency    ¦  /network related information:
   Inventory of         ^         ¦
@@ -389,7 +389,7 @@ Table of Contents
        ¦               ¦         ¦
        ¦               ¦         ¦
        ¦               ¦         ¦
-       ¦               ¦         ¦
+       ¦               ¦         v
   +--------------------------------------------------------------------+
   ¦                   *                                                ¦
   ¦     (2) controller   (collection, compute and aggregate?)          ¦
@@ -524,11 +524,6 @@ Table of Contents
    and correlate information to compose the right GREEN metric for the
    network device/component.
 
-  a collection of data for network devices and their components managed by a specific management system.
-
-   !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has
-   not been found.
-
 6.2.  Monitor Energy Efficiency
 
 6.3.  DataSheets/DataBase information
@@ -537,7 +532,7 @@ Table of Contents
 
 6.5.  Monitor Power
 
-6.6.  control energy saving
+6.6.  Control Energy Saving
 
 7.  TODO Security
 

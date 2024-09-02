@@ -1168,7 +1168,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
                 <p id="section-toc.1-1.6.2.5.1"><a href="#section-6.5" class="auto internal xref">6.5</a>.  <a href="#name-monitor-power" class="internal xref">Monitor Power</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.6">
-                <p id="section-toc.1-1.6.2.6.1"><a href="#section-6.6" class="auto internal xref">6.6</a>.  <a href="#name-control-energy-saving" class="internal xref">control energy saving</a></p>
+                <p id="section-toc.1-1.6.2.6.1"><a href="#section-6.6" class="auto internal xref">6.6</a>.  <a href="#name-control-energy-saving" class="internal xref">Control Energy Saving</a></p>
 </li>
             </ul>
 </li>
@@ -1522,8 +1522,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
 
  (3) Network Level :
 
- (a)              (b)             (c)
- Discovery        Monitor       +-&gt;DataSheets/DataBase and/or via API
+ (a)              (b)              (c)
+ Discovery        Monitor       +- DataSheets/DataBase and/or via API
  Or Inventory     Energy        ¦  Metadata and other device/component
  Of identity      Efficiency    ¦  /network related information:
  Inventory of         ^         ¦
@@ -1534,7 +1534,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       ¦               ¦         ¦
       ¦               ¦         ¦
       ¦               ¦         ¦
-      ¦               ¦         ¦
+      ¦               ¦         v
  +--------------------------------------------------------------------+
  ¦                   *                                                ¦
  ¦     (2) controller   (collection, compute and aggregate?)          ¦
@@ -1653,12 +1653,6 @@ svg :is([fill="white"], [fill^="#fff"]) {
         </ul>
 <p id="section-6.1-12">The data collection frequency might need to be adjusted based on the specific attributes. For example, the discovery of linecards installed on network devices will not change every hour, whereas temperature and power sensor information changes will need to be closer to real-time.<a href="#section-6.1-12" class="pilcrow">¶</a></p>
 <p id="section-6.1-13">Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.<a href="#section-6.1-13" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-6.1-14">
-<pre>
-  a collection of data for network devices and their components managed by a specific management system.
-</pre><a href="#section-6.1-14" class="pilcrow">¶</a>
-</div>
-<p id="section-6.1-15">!!! &lt;&lt;TBD&gt;&gt; GAP?? Definition for “Discovery” @ IETF references has not been found.<a href="#section-6.1-15" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="monitor-energy-efficiency">
@@ -1692,7 +1686,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <div id="control-energy-saving">
 <section id="section-6.6">
         <h3 id="name-control-energy-saving">
-<a href="#section-6.6" class="section-number selfRef">6.6. </a><a href="#name-control-energy-saving" class="section-name selfRef">control energy saving</a>
+<a href="#section-6.6" class="section-number selfRef">6.6. </a><a href="#name-control-energy-saving" class="section-name selfRef">Control Energy Saving</a>
       </h3>
 </section>
 </div>
