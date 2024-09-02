@@ -209,7 +209,7 @@ The overall framework is shown in {{green-framework}}.
 ~~~~
 {: #green-framework title="Framework discussed during the BoF"}
 
-The main participants in the framework are as follows:
+The main elements in the framework are as follows:
 
 (a),(d) Inventory and Discovery
 
@@ -285,7 +285,15 @@ Even though sensors normally are embedded in the network device/component, there
 
 !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has not been found.
 
+## Monitor Energy Efficiency
 
+## DataSheets/DataBase information
+
+## Network Performance
+
+## Monitor Power
+
+## control energy saving
 
 # TODO Security
 
