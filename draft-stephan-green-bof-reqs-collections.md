@@ -204,12 +204,26 @@ The overall framework is shown in {{green-framework}}.
 ~~~~
 {: #green-framework title="Framework discussed during the BoF"}
 
+The main participants in the framework are as follows:
+
+(a),(d) Inventory and Discovery 
+
+(b) Monitor Energy Efficiency
+
+(c) DataSheets/DataBase information
+
+(e) Network Performance
+
+(f) Monitor Power 
+
+(g) control energy saving
+
+
+
+
+## Inventory and Discovery 
 
 Based on the framework discussed during the BoF, the architectural requirements for the “GREEN” Framework:
-
-
-
-(a) Inventory and Discovery level
 
 From a Network Inventory[1] point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
 
