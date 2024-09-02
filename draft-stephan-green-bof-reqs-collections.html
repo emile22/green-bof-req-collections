@@ -1156,19 +1156,13 @@ svg :is([fill="white"], [fill^="#fff"]) {
                 <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="auto internal xref">6.1</a>.  <a href="#name-inventory-and-discovery" class="internal xref">Inventory and Discovery</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.2">
-                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-monitor-energy-efficiency" class="internal xref">Monitor Energy Efficiency</a></p>
+                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-green-metrics" class="internal xref">GREEN metrics</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.3">
-                <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="auto internal xref">6.3</a>.  <a href="#name-datasheets-database-informa" class="internal xref">DataSheets/DataBase information</a></p>
+                <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="auto internal xref">6.3</a>.  <a href="#name-monitor-and-performance" class="internal xref">Monitor and Performance</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.4">
-                <p id="section-toc.1-1.6.2.4.1"><a href="#section-6.4" class="auto internal xref">6.4</a>.  <a href="#name-network-performance" class="internal xref">Network Performance</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.5">
-                <p id="section-toc.1-1.6.2.5.1"><a href="#section-6.5" class="auto internal xref">6.5</a>.  <a href="#name-monitor-power" class="internal xref">Monitor Power</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.6">
-                <p id="section-toc.1-1.6.2.6.1"><a href="#section-6.6" class="auto internal xref">6.6</a>.  <a href="#name-control-energy-saving" class="internal xref">Control Energy Saving</a></p>
+                <p id="section-toc.1-1.6.2.4.1"><a href="#section-6.4" class="auto internal xref">6.4</a>.  <a href="#name-control-energy-saving" class="internal xref">Control energy saving</a></p>
 </li>
             </ul>
 </li>
@@ -1573,11 +1567,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </div>
 <p id="section-6-3">The main elements in the framework are as follows:<a href="#section-6-3" class="pilcrow">¶</a></p>
 <p id="section-6-4">(a),(d) Inventory and Discovery<a href="#section-6-4" class="pilcrow">¶</a></p>
-<p id="section-6-5">(b) Monitor Energy Efficiency<a href="#section-6-5" class="pilcrow">¶</a></p>
-<p id="section-6-6">(c) DataSheets/DataBase information<a href="#section-6-6" class="pilcrow">¶</a></p>
-<p id="section-6-7">(e) Network Performance<a href="#section-6-7" class="pilcrow">¶</a></p>
-<p id="section-6-8">(f) Monitor Power<a href="#section-6-8" class="pilcrow">¶</a></p>
-<p id="section-6-9">(g) control energy saving<a href="#section-6-9" class="pilcrow">¶</a></p>
+<p id="section-6-5">(b),(c) GREEN metrics<a href="#section-6-5" class="pilcrow">¶</a></p>
+<p id="section-6-6">(b),(e),(f) Monitor and Performance<a href="#section-6-6" class="pilcrow">¶</a></p>
+<p id="section-6-7">(g) Control energy saving<a href="#section-6-7" class="pilcrow">¶</a></p>
 <div id="inventory-and-discovery">
 <section id="section-6.1">
         <h3 id="name-inventory-and-discovery">
@@ -1653,41 +1645,32 @@ svg :is([fill="white"], [fill^="#fff"]) {
         </ul>
 <p id="section-6.1-12">The data collection frequency might need to be adjusted based on the specific attributes. For example, the discovery of linecards installed on network devices will not change every hour, whereas temperature and power sensor information changes will need to be closer to real-time.<a href="#section-6.1-12" class="pilcrow">¶</a></p>
 <p id="section-6.1-13">Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.<a href="#section-6.1-13" class="pilcrow">¶</a></p>
+<p id="section-6.1-14">!!! &lt;&lt;TBD&gt;&gt; GAP?? Definition for “Discovery” @ IETF references has not been found.<a href="#section-6.1-14" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="monitor-energy-efficiency">
+<div id="green-metrics">
 <section id="section-6.2">
-        <h3 id="name-monitor-energy-efficiency">
-<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-monitor-energy-efficiency" class="section-name selfRef">Monitor Energy Efficiency</a>
-      </h3>
+        <h3 id="name-green-metrics">
+<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-green-metrics" class="section-name selfRef">GREEN metrics</a>
+        </h3>
+<p id="section-6.2-1">Based on the work initiated under <span>[<a href="#I-D.draft-cx-opsawg-green-metrics-02" class="cite xref">I-D.draft-cx-opsawg-green-metrics-02</a>]</span>, it might be required to prioritise the definition and data models for the metrics relevant to the components and network elements, as they will be the ones influencing the most to the metrics related to flows, path and network.<a href="#section-6.2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="datasheetsdatabase-information">
+<div id="monitor-and-performance">
 <section id="section-6.3">
-        <h3 id="name-datasheets-database-informa">
-<a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-datasheets-database-informa" class="section-name selfRef">DataSheets/DataBase information</a>
-      </h3>
-</section>
-</div>
-<div id="network-performance">
-<section id="section-6.4">
-        <h3 id="name-network-performance">
-<a href="#section-6.4" class="section-number selfRef">6.4. </a><a href="#name-network-performance" class="section-name selfRef">Network Performance</a>
-      </h3>
-</section>
-</div>
-<div id="monitor-power">
-<section id="section-6.5">
-        <h3 id="name-monitor-power">
-<a href="#section-6.5" class="section-number selfRef">6.5. </a><a href="#name-monitor-power" class="section-name selfRef">Monitor Power</a>
-      </h3>
+        <h3 id="name-monitor-and-performance">
+<a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-monitor-and-performance" class="section-name selfRef">Monitor and Performance</a>
+        </h3>
+<p id="section-6.3-1">Monitor and Performance will include the guidelines for the association of the different attributes that defined the GREEN metrics to compose and aggregate the data collection to formed the reporting<a href="#section-6.3-1" class="pilcrow">¶</a></p>
+<p id="section-6.3-2">The architecture could define a prefer interface, based in YANG as the preferred data model, but should allow enough freedom in the implementation, where any kind of quantity can be measured, any kind of collection protocol and mechanism employed, and the telemetry data flows aggregated using any kind of operation.<a href="#section-6.3-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="control-energy-saving">
-<section id="section-6.6">
+<section id="section-6.4">
         <h3 id="name-control-energy-saving">
-<a href="#section-6.6" class="section-number selfRef">6.6. </a><a href="#name-control-energy-saving" class="section-name selfRef">Control Energy Saving</a>
-      </h3>
+<a href="#section-6.4" class="section-number selfRef">6.4. </a><a href="#name-control-energy-saving" class="section-name selfRef">Control energy saving</a>
+        </h3>
+<p id="section-6.4-1">Control will consider how to improve GREEN metrics with the final goal to automate the monitoring, performance and remediation in case of a fault or deviation of the performance defined for the metrics.<a href="#section-6.4-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1720,6 +1703,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dt id="GREEN-BOF">[GREEN-BOF]</dt>
       <dd>
 <span class="refTitle">"BOF proposal for GREEN WG Creation"</span>, <time datetime="2024-05-10" class="refDate">10 May 2024</time>, <span>&lt;<a href="https://github.com/marisolpalmero/GREEN-bof">https://github.com/marisolpalmero/GREEN-bof</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="I-D.draft-cx-opsawg-green-metrics-02">[I-D.draft-cx-opsawg-green-metrics-02]</dt>
+      <dd>
+<span class="refAuthor">Clemm, A.</span>, <span class="refAuthor">Dong, L.</span>, <span class="refAuthor">Mirsky, G.</span>, <span class="refAuthor">Ciavaglia, L.</span>, <span class="refAuthor">Tantsura, J.</span>, <span class="refAuthor">Odini, M.</span>, <span class="refAuthor">Schooler, E.</span>, <span class="refAuthor">Rezaki, A.</span>, and <span class="refAuthor">C. Pignataro</span>, <span class="refTitle">"Green Networking Metrics"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-cx-opsawg-green-metrics-02</span>, <time datetime="2024-03-04" class="refDate">4 March 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-cx-opsawg-green-metrics-02">https://datatracker.ietf.org/doc/html/draft-cx-opsawg-green-metrics-02</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.draft-ivy-network-inventory-yang">[I-D.draft-ivy-network-inventory-yang]</dt>
       <dd>

@@ -84,11 +84,9 @@ Table of Contents
    5.  Requirements extracted from sustainability-insights uses cases
    6.  Framework Discussed During the BoF
      6.1.  Inventory and Discovery
-     6.2.  Monitor Energy Efficiency
-     6.3.  DataSheets/DataBase information
-     6.4.  Network Performance
-     6.5.  Monitor Power
-     6.6.  Control Energy Saving
+     6.2.  GREEN metrics
+     6.3.  Monitor and Performance
+     6.4.  Control energy saving
    7.  TODO Security
    8.  IANA Considerations
    9.  Informative References
@@ -426,15 +424,11 @@ Table of Contents
 
    (a),(d) Inventory and Discovery
 
-   (b) Monitor Energy Efficiency
+   (b),(c) GREEN metrics
 
-   (c) DataSheets/DataBase information
+   (b),(e),(f) Monitor and Performance
 
-   (e) Network Performance
-
-   (f) Monitor Power
-
-   (g) control energy saving
+   (g) Control energy saving
 
 6.1.  Inventory and Discovery
 
@@ -523,15 +517,36 @@ Table of Contents
    and correlate information to compose the right GREEN metric for the
    network device/component.
 
-6.2.  Monitor Energy Efficiency
+   !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has
+   not been found.
 
-6.3.  DataSheets/DataBase information
+6.2.  GREEN metrics
 
-6.4.  Network Performance
+   Based on the work initiated under
+   [I-D.draft-cx-opsawg-green-metrics-02], it might be required to
+   prioritise the definition and data models for the metrics relevant to
+   the components and network elements, as they will be the ones
+   influencing the most to the metrics related to flows, path and
+   network.
 
-6.5.  Monitor Power
+6.3.  Monitor and Performance
 
-6.6.  Control Energy Saving
+   Monitor and Performance will include the guidelines for the
+   association of the different attributes that defined the GREEN
+   metrics to compose and aggregate the data collection to formed the
+   reporting
+
+   The architecture could define a prefer interface, based in YANG as
+   the preferred data model, but should allow enough freedom in the
+   implementation, where any kind of quantity can be measured, any kind
+   of collection protocol and mechanism employed, and the telemetry data
+   flows aggregated using any kind of operation.
+
+6.4.  Control energy saving
+
+   Control will consider how to improve GREEN metrics with the final
+   goal to automate the monitoring, performance and remediation in case
+   of a fault or deviation of the performance defined for the metrics.
 
 7.  TODO Security
 
@@ -551,6 +566,14 @@ Table of Contents
    [GREEN-BOF]
               "BOF proposal for GREEN WG Creation", 10 May 2024,
               <https://github.com/marisolpalmero/GREEN-bof>.
+
+   [I-D.draft-cx-opsawg-green-metrics-02]
+              Clemm, A., Dong, L., Mirsky, G., Ciavaglia, L., Tantsura,
+              J., Odini, M., Schooler, E., Rezaki, A., and C. Pignataro,
+              "Green Networking Metrics", Work in Progress, Internet-
+              Draft, draft-cx-opsawg-green-metrics-02, 4 March 2024,
+              <https://datatracker.ietf.org/doc/html/draft-cx-opsawg-
+              green-metrics-02>.
 
    [I-D.draft-ivy-network-inventory-yang]
               "*** BROKEN REFERENCE ***".
