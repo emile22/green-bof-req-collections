@@ -84,6 +84,11 @@ Table of Contents
    5.  Requirements extracted from sustainability-insights uses cases
    6.  Framework Discussed During the BoF
      6.1.  Inventory and Discovery
+     6.2.  Monitor Energy Efficiency
+     6.3.  DataSheets/DataBase information
+     6.4.  Network Performance
+     6.5.  Monitor Power
+     6.6.  control energy saving
    7.  TODO Security
    8.  IANA Considerations
    9.  Informative References
@@ -417,7 +422,7 @@ Table of Contents
 
               Figure 1: Framework discussed during the BoF
 
-   The main participants in the framework are as follows:
+   The main elements in the framework are as follows:
 
    (a),(d) Inventory and Discovery
 
@@ -523,6 +528,16 @@ Table of Contents
 
    !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has
    not been found.
+
+6.2.  Monitor Energy Efficiency
+
+6.3.  DataSheets/DataBase information
+
+6.4.  Network Performance
+
+6.5.  Monitor Power
+
+6.6.  control energy saving
 
 7.  TODO Security
 
