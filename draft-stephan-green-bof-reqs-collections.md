@@ -163,8 +163,8 @@ The overall framework is shown in {{green-framework}}.
 
  (3) Network Level :
 
- (a)              (b)             (c)
- Discovery        Monitor       +->DataSheets/DataBase and/or via API
+ (a)              (b)              (c)
+ Discovery        Monitor       +- DataSheets/DataBase and/or via API
  Or Inventory     Energy        ¦  Metadata and other device/component
  Of identity      Efficiency    ¦  /network related information:
  Inventory of         ^         ¦
@@ -175,7 +175,7 @@ The overall framework is shown in {{green-framework}}.
       ¦               ¦         ¦
       ¦               ¦         ¦
       ¦               ¦         ¦
-      ¦               ¦         ¦
+      ¦               ¦         v
  +--------------------------------------------------------------------+
  ¦                   *                                                ¦
  ¦     (2) controller   (collection, compute and aggregate?)          ¦
@@ -192,8 +192,8 @@ The overall framework is shown in {{green-framework}}.
               ¦  ,etc)       ¦                   ¦ ¦
               ¦              ¦                   ¦ v
  +--------------------------------------------------------------------+
- ¦                                            *                       ¦
- ¦                  (1) Device/Component Level                        ¦
+ ¦                                                                    ¦
+ ¦                  (1) Device/Component Level*                       ¦
  ¦                                                                    ¦
  ¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
  ¦ ¦ (I)     ¦  ¦ (II)      ¦  ¦ (III)          ¦  ¦ (IV)           ¦ ¦
@@ -223,7 +223,7 @@ The main elements in the framework are as follows:
 
 Based on the framework discussed during the BoF, the architectural requirements for the “GREEN” Framework:
 
-From a Network Inventory {{network-inventory}} {{?I-D.draft-ivy-network-inventory-yang}} {{?I-D.draft-palmero-opsawg-ps-almo-00}} point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
+From a Network Inventory {{network-inventory}} {{?I-D.draft-ivy-network-inventory-yang}} point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
 
 “Static” attributes refer to those that do not change based on the state of the network infrastructure. The following examples are all static attributes that we can relate to the inventory, implemented in the network devices or as part of external sources:
 
