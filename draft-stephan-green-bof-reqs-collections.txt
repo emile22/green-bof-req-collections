@@ -437,6 +437,7 @@ Table of Contents
    requirements for the “GREEN” Framework:
 
    From a Network Inventory [network-inventory]
+   [I-D.draft-ivy-network-inventory-yang]
    [I-D.draft-palmero-opsawg-ps-almo-00] point of view, when discussing
    Energy Efficiency metrics, also known as GREEN metrics, it is
    important to distinguish between static and dynamic attributes:
@@ -541,6 +542,9 @@ Table of Contents
    [GREEN-BOF]
               "BOF proposal for GREEN WG Creation", 10 May 2024,
               <https://github.com/marisolpalmero/GREEN-bof>.
+
+   [I-D.draft-ivy-network-inventory-yang]
+              "*** BROKEN REFERENCE ***".
 
    [I-D.draft-palmero-opsawg-ps-almo-00]
               Palmero, M., Brockners, F., Kumar, S., Cardona, C., and D.
