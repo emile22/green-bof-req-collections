@@ -436,9 +436,10 @@ Table of Contents
    Based on the framework discussed during the BoF, the architectural
    requirements for the “GREEN” Framework:
 
-   From a Network Inventory [network-inventory] point of view, when
-   discussing Energy Efficiency metrics, also known as GREEN metrics, it
-   is important to distinguish between static and dynamic attributes:
+   From a Network Inventory [network-inventory]
+   [I-D.draft-palmero-opsawg-ps-almo-00] point of view, when discussing
+   Energy Efficiency metrics, also known as GREEN metrics, it is
+   important to distinguish between static and dynamic attributes:
 
    “Static” attributes refer to those that do not change based on the
    state of the network infrastructure.  The following examples are all
@@ -540,6 +541,14 @@ Table of Contents
    [GREEN-BOF]
               "BOF proposal for GREEN WG Creation", 10 May 2024,
               <https://github.com/marisolpalmero/GREEN-bof>.
+
+   [I-D.draft-palmero-opsawg-ps-almo-00]
+              Palmero, M., Brockners, F., Kumar, S., Cardona, C., and D.
+              Lopez, "Asset Lifecycle Management and Operations, Problem
+              Statement", Work in Progress, Internet-Draft, draft-
+              palmero-opsawg-ps-almo-00, 29 June 2023,
+              <https://datatracker.ietf.org/doc/html/draft-palmero-
+              opsawg-ps-almo-00>.
 
    [legacy-path]
               "Requirements for Energy Efficiency Management", 21 July
