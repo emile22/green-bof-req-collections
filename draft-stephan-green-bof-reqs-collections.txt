@@ -406,8 +406,8 @@ Table of Contents
                ¦  ,etc)       ¦                   ¦ ¦
                ¦              ¦                   ¦ v
   +--------------------------------------------------------------------+
-  ¦                                            *                       ¦
-  ¦                  (1) Device/Component Level                        ¦
+  ¦                                                                    ¦
+  ¦                  (1) Device/Component Level*                       ¦
   ¦                                                                    ¦
   ¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
   ¦ ¦ (I)     ¦  ¦ (II)      ¦  ¦ (III)          ¦  ¦ (IV)           ¦ ¦
@@ -442,8 +442,7 @@ Table of Contents
    requirements for the “GREEN” Framework:
 
    From a Network Inventory [network-inventory]
-   [I-D.draft-ivy-network-inventory-yang]
-   [I-D.draft-palmero-opsawg-ps-almo-00] point of view, when discussing
+   [I-D.draft-ivy-network-inventory-yang] point of view, when discussing
    Energy Efficiency metrics, also known as GREEN metrics, it is
    important to distinguish between static and dynamic attributes:
 
@@ -555,14 +554,6 @@ Table of Contents
 
    [I-D.draft-ivy-network-inventory-yang]
               "*** BROKEN REFERENCE ***".
-
-   [I-D.draft-palmero-opsawg-ps-almo-00]
-              Palmero, M., Brockners, F., Kumar, S., Cardona, C., and D.
-              Lopez, "Asset Lifecycle Management and Operations, Problem
-              Statement", Work in Progress, Internet-Draft, draft-
-              palmero-opsawg-ps-almo-00, 29 June 2023,
-              <https://datatracker.ietf.org/doc/html/draft-palmero-
-              opsawg-ps-almo-00>.
 
    [legacy-path]
               "Requirements for Energy Efficiency Management", 21 July
