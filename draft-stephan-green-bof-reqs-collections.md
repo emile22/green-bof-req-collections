@@ -163,8 +163,8 @@ The overall framework is shown in {{green-framework}}.
 
  (3) Network Level :
 
- (a)              (b)             (c)
- Discovery        Monitor       +->DataSheets/DataBase and/or via API
+ (a)              (b)              (c)
+ Discovery        Monitor       +- DataSheets/DataBase and/or via API
  Or Inventory     Energy        ¦  Metadata and other device/component
  Of identity      Efficiency    ¦  /network related information:
  Inventory of         ^         ¦
@@ -175,7 +175,7 @@ The overall framework is shown in {{green-framework}}.
       ¦               ¦         ¦
       ¦               ¦         ¦
       ¦               ¦         ¦
-      ¦               ¦         ¦
+      ¦               ¦         v
  +--------------------------------------------------------------------+
  ¦                   *                                                ¦
  ¦     (2) controller   (collection, compute and aggregate?)          ¦
@@ -281,10 +281,6 @@ The data collection frequency might need to be adjusted based on the specific at
 
 Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.
 
-      a collection of data for network devices and their components managed by a specific management system.
-
-!!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has not been found.
-
 ## Monitor Energy Efficiency
 
 ## DataSheets/DataBase information
@@ -293,7 +289,7 @@ Even though sensors normally are embedded in the network device/component, there
 
 ## Monitor Power
 
-## control energy saving
+## Control Energy Saving
 
 # TODO Security
 
