@@ -436,9 +436,9 @@ Table of Contents
    Based on the framework discussed during the BoF, the architectural
    requirements for the “GREEN” Framework:
 
-   From a Network Inventory[1] point of view, when discussing Energy
-   Efficiency metrics, also known as GREEN metrics, it is important to
-   distinguish between static and dynamic attributes:
+   From a Network Inventory [network-inventory] point of view, when
+   discussing Energy Efficiency metrics, also known as GREEN metrics, it
+   is important to distinguish between static and dynamic attributes:
 
    “Static” attributes refer to those that do not change based on the
    state of the network infrastructure.  The following examples are all
@@ -459,8 +459,21 @@ Table of Contents
 
    Static attributes also include benchmarking information related to
    energy consumption by design and test conditions, normally associated
-   to PSU’s, line-cards, etc.: - Idle power - Max power - Typical power
-   - Accuracy rate - PSU efficiency (80+) - Power allocation - Etc.
+   to PSU’s, line-cards, etc.:
+
+   *  Idle power
+
+   *  Max power
+
+   *  Typical power
+
+   *  Accuracy rate
+
+   *  PSU efficiency (80+)
+
+   *  Power allocation
+
+   *  Etc.
 
    These attributes might be collected from the device/component itself
    or they might be parameters as part of external sources, i.e.,
@@ -504,9 +517,7 @@ Table of Contents
    and correlate information to compose the right GREEN metric for the
    network device/component.
 
-   [1] Network Inventory: (https://www.ietf.org/archive/id/draft-ietf-
-   ivy-network-inventory-yang-03.txt) a collection of data for network
-   devices and their components managed by a specific management system.
+  a collection of data for network devices and their components managed by a specific management system.
 
    !!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has
    not been found.
@@ -534,6 +545,11 @@ Table of Contents
               "Requirements for Energy Efficiency Management", 21 July
               2024, <https://datatracker.ietf.org/doc/draft-stephan-
               legacy-path-eco-design>.
+
+   [network-inventory]
+              "YANG Data Model for Network Inventory", 20 July 2024,
+              <https://datatracker.ietf.org/doc/draft-ietf-ivy-network-
+              inventory-yang>.
 
    [operators-inputs]
               "Input from Operators to GREEN BoF", 20 July 2024,

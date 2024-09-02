@@ -1569,7 +1569,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-inventory-and-discovery" class="section-name selfRef">Inventory and Discovery</a>
         </h3>
 <p id="section-6.1-1">Based on the framework discussed during the BoF, the architectural requirements for the “GREEN” Framework:<a href="#section-6.1-1" class="pilcrow">¶</a></p>
-<p id="section-6.1-2">From a Network Inventory[1] point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:<a href="#section-6.1-2" class="pilcrow">¶</a></p>
+<p id="section-6.1-2">From a Network Inventory <span>[<a href="#network-inventory" class="cite xref">network-inventory</a>]</span> point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:<a href="#section-6.1-2" class="pilcrow">¶</a></p>
 <p id="section-6.1-3">“Static” attributes refer to those that do not change based on the state of the network infrastructure. The following examples are all static attributes that we can relate to the inventory, implemented in the network devices or as part of external sources:<a href="#section-6.1-3" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-6.1-4.1">
@@ -1591,40 +1591,59 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-6.1-4.6.1">Sensor(s)<a href="#section-6.1-4.6.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-6.1-5">Static attributes also include benchmarking information related to energy consumption by design and test conditions, normally associated to PSU’s, line-cards, etc.:
-- Idle power
-- Max power
-- Typical power
-- Accuracy rate
-- PSU efficiency (80+)
-- Power allocation
-- Etc.<a href="#section-6.1-5" class="pilcrow">¶</a></p>
-<p id="section-6.1-6">These attributes might be collected from the device/component itself or they might be parameters as part of external sources, i.e., databases owned by the hardware or software providers, where API access will be preferred.<a href="#section-6.1-6" class="pilcrow">¶</a></p>
-<p id="section-6.1-7">Normally, the “Discovery” process will be updating static attributes that represent the up-to-date inventory of the network. The Discovery process relates primarily to the static attributes, where will consider if a device or component has been replaced or is out of service. The “Operation” process will be updating the so-called dynamic attributes.<a href="#section-6.1-7" class="pilcrow">¶</a></p>
-<p id="section-6.1-8">Dynamic attributes are those that are subject to change due to the running operations, including configuration and state changes, and they will need to be collected regularly.<a href="#section-6.1-8" class="pilcrow">¶</a></p>
-<p id="section-6.1-9">They will be updated as part of the regular operations. Dynamic attributes might be related to sensors(environmental), traffic, state, etc. They will include attributes like:<a href="#section-6.1-9" class="pilcrow">¶</a></p>
+<p id="section-6.1-5">Static attributes also include benchmarking information related to energy consumption by design and test conditions, normally associated to PSU’s, line-cards, etc.:<a href="#section-6.1-5" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-6.1-10.1">
-            <p id="section-6.1-10.1.1">Temperature<a href="#section-6.1-10.1.1" class="pilcrow">¶</a></p>
+<li class="normal" id="section-6.1-6.1">
+            <p id="section-6.1-6.1.1">Idle power<a href="#section-6.1-6.1.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-6.1-10.2">
-            <p id="section-6.1-10.2.1">Current<a href="#section-6.1-10.2.1" class="pilcrow">¶</a></p>
+          <li class="normal" id="section-6.1-6.2">
+            <p id="section-6.1-6.2.1">Max power<a href="#section-6.1-6.2.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-6.1-10.3">
-            <p id="section-6.1-10.3.1">Voltage<a href="#section-6.1-10.3.1" class="pilcrow">¶</a></p>
+          <li class="normal" id="section-6.1-6.3">
+            <p id="section-6.1-6.3.1">Typical power<a href="#section-6.1-6.3.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-6.1-10.4">
-            <p id="section-6.1-10.4.1">Power<a href="#section-6.1-10.4.1" class="pilcrow">¶</a></p>
+          <li class="normal" id="section-6.1-6.4">
+            <p id="section-6.1-6.4.1">Accuracy rate<a href="#section-6.1-6.4.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-6.1-10.5">
-            <p id="section-6.1-10.5.1">Input and output traffic<a href="#section-6.1-10.5.1" class="pilcrow">¶</a></p>
+          <li class="normal" id="section-6.1-6.5">
+            <p id="section-6.1-6.5.1">PSU efficiency (80+)<a href="#section-6.1-6.5.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-6.1-6.6">
+            <p id="section-6.1-6.6.1">Power allocation<a href="#section-6.1-6.6.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-6.1-6.7">
+            <p id="section-6.1-6.7.1">Etc.<a href="#section-6.1-6.7.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
-<p id="section-6.1-11">The data collection frequency might need to be adjusted based on the specific attributes. For example, the discovery of linecards installed on network devices will not change every hour, whereas temperature and power sensor information changes will need to be closer to real-time.<a href="#section-6.1-11" class="pilcrow">¶</a></p>
-<p id="section-6.1-12">Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.<a href="#section-6.1-12" class="pilcrow">¶</a></p>
-<p id="section-6.1-13">[1] Network Inventory: (https://www.ietf.org/archive/id/draft-ietf-ivy-network-inventory-yang-03.txt)
-      a collection of data for network devices and their components managed by a specific management system.<a href="#section-6.1-13" class="pilcrow">¶</a></p>
-<p id="section-6.1-14">!!! &lt;&lt;TBD&gt;&gt; GAP?? Definition for “Discovery” @ IETF references has not been found.<a href="#section-6.1-14" class="pilcrow">¶</a></p>
+<p id="section-6.1-7">These attributes might be collected from the device/component itself or they might be parameters as part of external sources, i.e., databases owned by the hardware or software providers, where API access will be preferred.<a href="#section-6.1-7" class="pilcrow">¶</a></p>
+<p id="section-6.1-8">Normally, the “Discovery” process will be updating static attributes that represent the up-to-date inventory of the network. The Discovery process relates primarily to the static attributes, where will consider if a device or component has been replaced or is out of service. The “Operation” process will be updating the so-called dynamic attributes.<a href="#section-6.1-8" class="pilcrow">¶</a></p>
+<p id="section-6.1-9">Dynamic attributes are those that are subject to change due to the running operations, including configuration and state changes, and they will need to be collected regularly.<a href="#section-6.1-9" class="pilcrow">¶</a></p>
+<p id="section-6.1-10">They will be updated as part of the regular operations. Dynamic attributes might be related to sensors(environmental), traffic, state, etc. They will include attributes like:<a href="#section-6.1-10" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-6.1-11.1">
+            <p id="section-6.1-11.1.1">Temperature<a href="#section-6.1-11.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-6.1-11.2">
+            <p id="section-6.1-11.2.1">Current<a href="#section-6.1-11.2.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-6.1-11.3">
+            <p id="section-6.1-11.3.1">Voltage<a href="#section-6.1-11.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-6.1-11.4">
+            <p id="section-6.1-11.4.1">Power<a href="#section-6.1-11.4.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-6.1-11.5">
+            <p id="section-6.1-11.5.1">Input and output traffic<a href="#section-6.1-11.5.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
+<p id="section-6.1-12">The data collection frequency might need to be adjusted based on the specific attributes. For example, the discovery of linecards installed on network devices will not change every hour, whereas temperature and power sensor information changes will need to be closer to real-time.<a href="#section-6.1-12" class="pilcrow">¶</a></p>
+<p id="section-6.1-13">Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.<a href="#section-6.1-13" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-6.1-14">
+<pre>
+  a collection of data for network devices and their components managed by a specific management system.
+</pre><a href="#section-6.1-14" class="pilcrow">¶</a>
+</div>
+<p id="section-6.1-15">!!! &lt;&lt;TBD&gt;&gt; GAP?? Definition for “Discovery” @ IETF references has not been found.<a href="#section-6.1-15" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1661,6 +1680,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dt id="legacy-path">[legacy-path]</dt>
       <dd>
 <span class="refTitle">"Requirements for Energy Efficiency Management"</span>, <time datetime="2024-07-21" class="refDate">21 July 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/draft-stephan-legacy-path-eco-design">https://datatracker.ietf.org/doc/draft-stephan-legacy-path-eco-design</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="network-inventory">[network-inventory]</dt>
+      <dd>
+<span class="refTitle">"YANG Data Model for Network Inventory"</span>, <time datetime="2024-07-20" class="refDate">20 July 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/draft-ietf-ivy-network-inventory-yang">https://datatracker.ietf.org/doc/draft-ietf-ivy-network-inventory-yang</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="operators-inputs">[operators-inputs]</dt>
       <dd>
