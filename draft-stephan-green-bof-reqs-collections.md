@@ -34,7 +34,9 @@ author:
 normative:
 
 informative:
- 
+
+  I-D.draft-palmero-opsawg-ps-almo-00
+  
   GREEN-BOF:
     title: "BOF proposal for GREEN WG Creation"
     date: 2024-05-10
