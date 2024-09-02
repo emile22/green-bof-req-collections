@@ -230,31 +230,31 @@ From a Network Inventory {{network-inventory}} point of view, when discussing En
 “Static” attributes refer to those that do not change based on the state of the network infrastructure. The following examples are all static attributes that we can relate to the inventory, implemented in the network devices or as part of external sources:
 
 - Serial number
-  
+
 - Product name
-  
+
 - Part number
-  
+
 - Vendor
-  
+
 - Device family
-  
+
 - Sensor(s)
 
 Static attributes also include benchmarking information related to energy consumption by design and test conditions, normally associated to PSU’s, line-cards, etc.:
 
 - Idle power
-  
+
 - Max power
-  
+
 - Typical power
-  
+
 - Accuracy rate
-  
+
 - PSU efficiency (80+)
-  
+
 - Power allocation
-  
+
 - Etc.
 
 These attributes might be collected from the device/component itself or they might be parameters as part of external sources, i.e., databases owned by the hardware or software providers, where API access will be preferred.
@@ -266,9 +266,13 @@ Dynamic attributes are those that are subject to change due to the running opera
 They will be updated as part of the regular operations. Dynamic attributes might be related to sensors(environmental), traffic, state, etc. They will include attributes like:
 
 - Temperature
+
 - Current
+
 - Voltage
+
 - Power
+
 - Input and output traffic
 
 The data collection frequency might need to be adjusted based on the specific attributes. For example, the discovery of linecards installed on network devices will not change every hour, whereas temperature and power sensor information changes will need to be closer to real-time.
