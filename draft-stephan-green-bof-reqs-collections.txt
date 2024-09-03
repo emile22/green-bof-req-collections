@@ -87,7 +87,7 @@ Table of Contents
      6.2.  GREEN Metrics
      6.3.  Monitor and Performance
      6.4.  Control Energy Saving
-   7.  TODO Security
+   7.  Security
    8.  IANA Considerations
    9.  Informative References
    Acknowledgments
@@ -461,7 +461,7 @@ Table of Contents
 
    Static attributes also include benchmarking information related to
    energy consumption by design and test conditions, normally associated
-   to PSU’s, line-cards, etc.:
+   to PSU's, line-cards, etc.:
 
    *  Idle power
 
@@ -550,7 +550,12 @@ Table of Contents
    goal to automate the monitoring, performance and remediation in case
    of a fault or deviation of the performance defined for the metrics.
 
-7.  TODO Security
+7.  Security
+
+   Adding new interfaces on devices increase attack surfaces.  Devices
+   have brief variation of power consumption due their internal works.
+   Reducing the power available may reduce their routing capacity which
+   may reduce network performance and resiliency.
 
 8.  IANA Considerations
 
