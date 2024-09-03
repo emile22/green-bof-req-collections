@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-09-01T00:51:50.041901+00:00",
+  "timestamp": "2024-09-03T00:42:21.909595+00:00",
   "repo": "emile22/green-bof-req-collections",
   "labels": [
     {
@@ -49,7 +49,52 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 5,
+      "id": "I_kwDOMnXjEc6VFqhB",
+      "title": "Wrong raw in Table 1",
+      "url": "https://github.com/emile22/green-bof-req-collections/issues/5",
+      "state": "OPEN",
+      "author": "luismcontreras",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "The following raw presents is wrong:\r\n\r\n +----------------+---------------------+-------------------+--------+\r\n   | Sustainability | 4                   |                   |        |\r\n\r\nStephan & Palmero       Expires 28 February 2025                [Page 5]\r\nInternet-Draft     Green BoF requirements collections        August 2024\r\n\r\n   | & Carbon       |                     |                   |        |\r\n   | EmissiCarbon,  |                     |                   |        |\r\n   | renewable      |                     |                   |        |\r\n   +----------------+---------------------+-------------------+--------+",
+      "createdAt": "2024-09-02T16:14:11Z",
+      "updatedAt": "2024-09-02T20:37:56Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "emile22",
+          "authorAssociation": "OWNER",
+          "body": "Thanks Luis, can you propose replacement text ?\r\n",
+          "createdAt": "2024-09-02T20:37:55Z",
+          "updatedAt": "2024-09-02T20:37:55Z"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "I_kwDOMnXjEc6VFrDH",
+      "title": "Section 5 - Alignment of categories wrt the other sections",
+      "url": "https://github.com/emile22/green-bof-req-collections/issues/6",
+      "state": "OPEN",
+      "author": "luismcontreras",
+      "authorAssociation": "NONE",
+      "assignees": [
+        "marisolpalmero"
+      ],
+      "labels": [
+        "help wanted"
+      ],
+      "body": "Section 5 presents some categories different to those in previous sections. It would be convenient to align the catagories as much as possible so that requirements can be easily related to specific areas / categories. This would be more tractable.",
+      "createdAt": "2024-09-02T16:16:00Z",
+      "updatedAt": "2024-09-02T20:34:00Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
@@ -58,7 +103,7 @@
       "url": "https://github.com/emile22/green-bof-req-collections/pull/1",
       "state": "MERGED",
       "author": "marisolpalmero",
-      "authorAssociation": "CONTRIBUTOR",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
@@ -100,7 +145,7 @@
       "url": "https://github.com/emile22/green-bof-req-collections/pull/2",
       "state": "MERGED",
       "author": "marisolpalmero",
-      "authorAssociation": "CONTRIBUTOR",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
@@ -140,24 +185,68 @@
       "id": "PR_kwDOMnXjEc55_q9f",
       "title": "fist attempt for the ref architecture requirements covering inventory\u2026",
       "url": "https://github.com/emile22/green-bof-req-collections/pull/3",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "marisolpalmero",
-      "authorAssociation": "CONTRIBUTOR",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "\u2026&discovery",
       "createdAt": "2024-08-30T15:50:15Z",
-      "updatedAt": "2024-08-30T15:50:15Z",
+      "updatedAt": "2024-09-02T08:35:54Z",
       "baseRepository": "emile22/green-bof-req-collections",
       "baseRefName": "main",
       "baseRefOid": "bd45b391cd914dcf74d64ee0f7cd803c0e9a826c",
       "headRepository": "marisolpalmero/green-bof-req-collections",
       "headRefName": "main",
       "headRefOid": "c21642ecdbcd0eb29d1cdd1affedef1793e19514",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-09-02T08:35:54Z",
+      "mergedAt": "2024-09-02T08:35:54Z",
+      "mergedBy": "emile22",
+      "mergeCommit": {
+        "oid": "b372ff6f4c0a8c55284acebc5907adeaeef8129a"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMnXjEc6HmgVy",
+          "commit": {
+            "abbreviatedOid": "c21642e"
+          },
+          "author": "emile22",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "good ! i will create a sub section for it",
+          "createdAt": "2024-09-02T08:33:23Z",
+          "updatedAt": "2024-09-02T08:33:23Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOMnXjEc56KPng",
+      "title": "adding to section 6",
+      "url": "https://github.com/emile22/green-bof-req-collections/pull/4",
+      "state": "MERGED",
+      "author": "marisolpalmero",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-09-02T12:54:35Z",
+      "updatedAt": "2024-09-02T20:58:40Z",
+      "baseRepository": "emile22/green-bof-req-collections",
+      "baseRefName": "main",
+      "baseRefOid": "0ce5643148e128feb0bb8cb6e11e270bdca96370",
+      "headRepository": "marisolpalmero/green-bof-req-collections",
+      "headRefName": "main",
+      "headRefOid": "c2fae9b9597cdf890f0dc5d0866f7cb4016742a2",
+      "closedAt": "2024-09-02T20:58:40Z",
+      "mergedAt": "2024-09-02T20:58:40Z",
+      "mergedBy": "emile22",
+      "mergeCommit": {
+        "oid": "ad11c2d5d16fcc9098de4b9d89981a0314d1728d"
+      },
       "comments": [],
       "reviews": []
     }
