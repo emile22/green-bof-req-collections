@@ -158,53 +158,53 @@ The overall framework is shown in {{green-framework}}.
 
 ~~~~
 
-        What needs to be standardized for Framework
+       What needs to be standardized for Framework
 
+(3) Network Domain Level :
 
- (3) Network Level :
+(a)              (b)              (c)
+Inventory        Monitor       +- DataSheets/DataBase and/or via API
+Of identity      Energy        ¦  Metadata and other device/component
+and Capability   Efficiency    ¦  /network related information:
+     ^               ^         ¦
+     ¦               ¦         ¦  .Power/Energy related metrics
+     ¦               ¦         ¦  .information
+     ¦               ¦         ¦  .origin of Energy Mix
+     ¦               ¦         ¦  .carbon aware based on location
+     ¦               ¦         ¦
+     ¦               ¦         ¦
+     ¦               ¦         ¦
+     ¦               ¦         v
++--------------------------------------------------------------------+
+¦                   *                                                ¦
+¦     (2) controller   (collection, compute and aggregate?)          ¦
+¦                                                                    ¦
++--------------------------------------------------------------------+
+             ^              ^                   ^ ¦
+  (d)        ¦  (e)         ¦  (f)              ¦ ¦(g)
+  Inventory  ¦  Monitor     ¦  GREEN WG:        ¦ ¦GREEN WG: Control
+  Capability ¦  Traffic     ¦  Monitor power    ¦ ¦(Energy saving
+             ¦  & power     ¦  Proportion,      ¦ ¦Functionality
+             ¦  consumption ¦  Energy efficiency¦ ¦Localized mgmt/
+             ¦              ¦  ratio, etc)      ¦ ¦network wide mgmt)
+             ¦              ¦                   ¦ ¦
+             ¦              ¦                   ¦ ¦
+             ¦              ¦                   ¦ v
++--------------------------------------------------------------------+
+¦                                            *                       ¦
+¦                  (1) Device/Component Level                        ¦
+¦                                                                    ¦
+¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
+¦ ¦ (I)     ¦  ¦ (II)      ¦  ¦ (III)          ¦  ¦ (IV)           ¦ ¦
+¦ ¦ Network ¦  ¦ Device    ¦  ¦ Legacy Network ¦  ¦ 'Attached'(PoE ¦ ¦
+¦ ¦ Device  ¦  ¦ Component ¦  ¦ Device         ¦  ¦ kind) Device   ¦ ¦
+¦ ¦         ¦  ¦           ¦  ¦                ¦  ¦                ¦ ¦
+¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
++--------------------------------------------------------------------+
 
- (a)              (b)              (c)
- Discovery        Monitor       +- DataSheets/DataBase and/or via API
- Or Inventory     Energy        ¦  Metadata and other device/component
- Of identity      Efficiency    ¦  /network related information:
- Inventory of         ^         ¦
- Capability           ¦         ¦  .Power/Energy related metrics
-      ^               ¦         ¦  .information
-      ¦               ¦         ¦  .origin of Energy Mix
-      ¦               ¦         ¦  .carbon aware based on location
-      ¦               ¦         ¦
-      ¦               ¦         ¦
-      ¦               ¦         ¦
-      ¦               ¦         v
- +--------------------------------------------------------------------+
- ¦                   *                                                ¦
- ¦     (2) controller   (collection, compute and aggregate?)          ¦
- ¦                                                                    ¦
- +--------------------------------------------------------------------+
-              ^              ^                   ^ ¦
-  (d)         ¦  (e)         ¦  (f)              ¦ ¦(g)
-  Discovery   ¦  IPPM WG:    ¦  GREEN WG:        ¦ ¦GREEN WG: Control
-  Or Inventory¦  Monitor     ¦  Monitor power    ¦ ¦(Energy saving
-  Of identity ¦  Network     ¦  Proportion,      ¦ ¦Functionality
-  Inventory of¦  Performance ¦  Energy efficiency¦ ¦Localized mgmt/
-  Capability  ¦  (Throughput,¦  ratio, Maximum   ¦ ¦network wide mgmt)
-              ¦  Traffic load¦  sleep time, etc) ¦ ¦
-              ¦  ,etc)       ¦                   ¦ ¦
-              ¦              ¦                   ¦ v
- +--------------------------------------------------------------------+
- ¦                                                                    ¦
- ¦                  (1) Device/Component Level*                       ¦
- ¦                                                                    ¦
- ¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
- ¦ ¦ (I)     ¦  ¦ (II)      ¦  ¦ (III)          ¦  ¦ (IV)           ¦ ¦
- ¦ ¦ Network ¦  ¦ Device    ¦  ¦ Legacy Network ¦  ¦ 'Attached'(PoE ¦ ¦
- ¦ ¦ Device  ¦  ¦ Component ¦  ¦ Device         ¦  ¦ kind) Device   ¦ ¦
- ¦ ¦         ¦  ¦           ¦  ¦                ¦  ¦                ¦ ¦
- ¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
- +--------------------------------------------------------------------+
+(*) Energy Efficiency Management Function is implemented inside the
+device or in a controller
 
- (*) Energy Efficiency Management Function is implemented inside the
- device or in a controller
 
 ~~~~
 {: #green-framework title="Framework discussed during the BoF"}
@@ -223,7 +223,7 @@ The main elements in the framework are as follows:
 
 Based on the framework discussed during the BoF, the architectural requirements for the “GREEN” Framework:
 
-From a Network Inventory {{network-inventory}} {{?I-D.draft-ivy-network-inventory-yang}} point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
+From a network inventory {{?I-D.draft-ivy-network-inventory-yang-03}} point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
 
 “Static” attributes refer to those that do not change based on the state of the network infrastructure. The following examples are all static attributes that we can relate to the inventory, implemented in the network devices or as part of external sources:
 
@@ -305,5 +305,5 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-This version collectes works from the Green Bof proponents: Luis, Marisol, Tony, Qin and Emile and from our coachs Jari, Adrian and Benoit, and from our supporter Tobe
+This version collectes works from the Green Bof proponents: Luis, Marisol, Tony, Qin and Emile, from our coachs Jari, Adrian and Benoit, and from our supporter Tobe
 
