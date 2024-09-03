@@ -225,7 +225,7 @@ The main elements in the framework are as follows:
 
 Based on the framework discussed during the BoF, the architectural requirements for the “GREEN” Framework:
 
-From a network inventory {{?I-D.draft-ivy-network-inventory-yang-03}} point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
+From a network inventory [network-inventory] point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
 
 “Static” attributes refer to those that do not change based on the state of the network infrastructure. The following examples are all static attributes that we can relate to the inventory, implemented in the network devices or as part of external sources:
 
