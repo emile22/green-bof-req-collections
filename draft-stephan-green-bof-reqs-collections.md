@@ -160,6 +160,7 @@ The overall framework is shown in {{green-framework}}.
 
        What needs to be standardized for Framework
 
+
 (3) Network Domain Level :
 
 (a)              (b)              (c)
@@ -204,8 +205,6 @@ and Capability   Efficiency    ¦  /network related information:
 
 (*) Energy Efficiency Management Function is implemented inside the
 device or in a controller
-
-
 ~~~~
 {: #green-framework title="Framework discussed during the BoF"}
 
