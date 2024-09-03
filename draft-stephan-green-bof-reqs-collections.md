@@ -165,46 +165,47 @@ The overall framework is shown in {{green-framework}}.
 
 (a)              (b)              (c)
 Inventory        Monitor       +- DataSheets/DataBase and/or via API
-Of identity      Energy        ¦  Metadata and other device/component
-and Capability   Efficiency    ¦  /network related information:
-     ^               ^         ¦
-     ¦               ¦         ¦  .Power/Energy related metrics
-     ¦               ¦         ¦  .information
-     ¦               ¦         ¦  .origin of Energy Mix
-     ¦               ¦         ¦  .carbon aware based on location
-     ¦               ¦         ¦
-     ¦               ¦         ¦
-     ¦               ¦         ¦
-     ¦               ¦         v
+Of identity      Energy        |  Metadata and other device/component
+and Capability   Efficiency    |  /network related information:
+     ^               ^         |
+     |               |         |  .Power/Energy related metrics
+     |               |         |  .information
+     |               |         |  .origin of Energy Mix
+     |               |         |  .carbon aware based on location
+     |               |         |
+     |               |         |
+     |               |         |
+     |               |         v
 +--------------------------------------------------------------------+
-¦                   *                                                ¦
-¦     (2) controller   (collection, compute and aggregate?)          ¦
-¦                                                                    ¦
+|                   *                                                |
+|     (2) controller   (collection, compute and aggregate?)          |
+|                                                                    |
 +--------------------------------------------------------------------+
-             ^              ^                   ^ ¦
-  (d)        ¦  (e)         ¦  (f)              ¦ ¦(g)
-  Inventory  ¦  Monitor     ¦  GREEN WG:        ¦ ¦GREEN WG: Control
-  Capability ¦  Traffic     ¦  Monitor power    ¦ ¦(Energy saving
-             ¦  & power     ¦  Proportion,      ¦ ¦Functionality
-             ¦  consumption ¦  Energy efficiency¦ ¦Localized mgmt/
-             ¦              ¦  ratio, etc)      ¦ ¦network wide mgmt)
-             ¦              ¦                   ¦ ¦
-             ¦              ¦                   ¦ ¦
-             ¦              ¦                   ¦ v
+             ^              ^                   ^ |
+  (d)        |  (e)         |  (f)              | |(g)
+  Inventory  |  Monitor     |  GREEN WG:        | |GREEN WG: Control
+  Capability |  Traffic     |  Monitor power    | |(Energy saving
+             |  & power     |  Proportion,      | |Functionality
+             |  consumption |  Energy efficiency| |Localized mgmt/
+             |              |  ratio, etc)      | |network wide mgmt)
+             |              |                   | |
+             |              |                   | |
+             |              |                   | v
 +--------------------------------------------------------------------+
-¦                                            *                       ¦
-¦                  (1) Device/Component Level                        ¦
-¦                                                                    ¦
-¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
-¦ ¦ (I)     ¦  ¦ (II)      ¦  ¦ (III)          ¦  ¦ (IV)           ¦ ¦
-¦ ¦ Network ¦  ¦ Device    ¦  ¦ Legacy Network ¦  ¦ 'Attached'(PoE ¦ ¦
-¦ ¦ Device  ¦  ¦ Component ¦  ¦ Device         ¦  ¦ kind) Device   ¦ ¦
-¦ ¦         ¦  ¦           ¦  ¦                ¦  ¦                ¦ ¦
-¦ +---------+  +-----------+  +----------------+  +----------------+ ¦
+|                                            *                       |
+|                  (1) Device/Component Level                        |
+|                                                                    |
+| +---------+  +-----------+  +----------------+  +----------------+ |
+| | (I)     |  | (II)      |  | (III)          |  | (IV)           | |
+| | Network |  | Device    |  | Legacy Network |  | 'Attached'(PoE | |
+| | Device  |  | Component |  | Device         |  | kind) Device   | |
+| |         |  |           |  |                |  |                | |
+| +---------+  +-----------+  +----------------+  +----------------+ |
 +--------------------------------------------------------------------+
 
 (*) Energy Efficiency Management Function is implemented inside the
 device or in a controller
+
 ~~~~
 {: #green-framework title="Framework discussed during the BoF"}
 
