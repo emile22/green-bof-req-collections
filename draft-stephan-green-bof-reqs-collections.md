@@ -299,7 +299,7 @@ Control will consider how to improve GREEN metrics with the final goal to automa
 # Security
 
 Adding new interfaces on devices increase attack surfaces.
-Devices have brief variation of power consumption due their internal works. Reducing the power available may reduce their routing capacity which may reduce network performance and resiliency. 
+Devices have brief variation of power consumption due their internal works. Reducing the power available may reduce their routing capacity which may reduce network performance and resiliency.
 
 # IANA Considerations
 
