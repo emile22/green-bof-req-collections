@@ -241,7 +241,7 @@ From a network inventory [network-inventory] point of view, when discussing Ener
 
 - Sensor(s)
 
-Static attributes also include benchmarking information related to energy consumption by design and test conditions, normally associated to PSU’s, line-cards, etc.:
+Static attributes also include benchmarking information related to energy consumption by design and test conditions, normally associated to PSU's, line-cards, etc.:
 
 - Idle power
 
@@ -296,7 +296,10 @@ The architecture could define a prefer interface, based in YANG as the preferred
 
 Control will consider how to improve GREEN metrics with the final goal to automate the monitoring, performance and remediation in case of a fault or deviation of the performance defined for the metrics.
 
-# TODO Security
+# Security
+
+Adding new interfaces on devices increase attack surfaces.
+Devices have brief variation of power consumption due their internal works. Reducing the power available may reduce their routing capacity which may reduce network performance and resiliency. 
 
 # IANA Considerations
 
