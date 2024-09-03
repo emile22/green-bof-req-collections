@@ -223,11 +223,11 @@ The main elements in the framework are as follows:
 
 ## Inventory and Discovery
 
-Based on the framework discussed during the BoF, the architectural requirements for the “GREEN” Framework:
+Based on the framework discussed during the BoF, the architectural requirements for the "GREEN" Framework:
 
 From a network inventory [network-inventory] point of view, when discussing Energy Efficiency metrics, also known as GREEN metrics, it is important to distinguish between static and dynamic attributes:
 
-“Static” attributes refer to those that do not change based on the state of the network infrastructure. The following examples are all static attributes that we can relate to the inventory, implemented in the network devices or as part of external sources:
+"Static" attributes refer to those that do not change based on the state of the network infrastructure. The following examples are all static attributes that we can relate to the inventory, implemented in the network devices or as part of external sources:
 
 - Serial number
 
@@ -259,7 +259,7 @@ Static attributes also include benchmarking information related to energy consum
 
 These attributes might be collected from the device/component itself or they might be parameters as part of external sources, i.e., databases owned by the hardware or software providers, where API access will be preferred.
 
-Normally, the “Discovery” process will be updating static attributes that represent the up-to-date inventory of the network. The Discovery process relates primarily to the static attributes, where will consider if a device or component has been replaced or is out of service. The “Operation” process will be updating the so-called dynamic attributes.
+Normally, the "Discovery" process will be updating static attributes that represent the up-to-date inventory of the network. The Discovery process relates primarily to the static attributes, where will consider if a device or component has been replaced or is out of service. The "Operation" process will be updating the so-called dynamic attributes.
 
 Dynamic attributes are those that are subject to change due to the running operations, including configuration and state changes, and they will need to be collected regularly.
 
@@ -280,7 +280,7 @@ The data collection frequency might need to be adjusted based on the specific at
 Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.
 
 
-!!! <<TBD>> GAP?? Definition for “Discovery” @ IETF references has not been found.
+!!! <<TBD>> GAP?? Definition for "Discovery" @ IETF references has not been found.
 
 ## GREEN Metrics
 
