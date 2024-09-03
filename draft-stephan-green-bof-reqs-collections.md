@@ -211,11 +211,13 @@ device or in a controller
 
 The main elements in the framework are as follows:
 
-(a),(d) Inventory and Discovery
+(a),(d) Inventory
 
 (b),(c) GREEN Metrics
 
-(b),(e),(f) Monitor and Performance
+(b),(f) Monitor energy efficiency
+
+(e) Monitor power consumption and traffic (IPPM WG throughput, traffic load, etc)
 
 (g) Control Energy Saving
 
