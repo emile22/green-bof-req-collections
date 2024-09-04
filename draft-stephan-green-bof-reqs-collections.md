@@ -279,9 +279,6 @@ The data collection frequency might need to be adjusted based on the specific at
 
 Even though sensors normally are embedded in the network device/component, there are external sensors meant to measure temperature and energy consumption. The network controller will need to collect and correlate information to compose the right GREEN metric for the network device/component.
 
-
-!!! <<TBD>> GAP?? Definition for "Discovery" @ IETF references has not been found.
-
 ## GREEN Metrics
 
 Based on the work initiated under {{?I-D.draft-cx-opsawg-green-metrics-02}}, it might be required to prioritise the definition and data models for the metrics relevant to the components and network elements, as they will be the ones influencing the most to the metrics related to flows, path and network.
@@ -295,6 +292,32 @@ The architecture could define a prefer interface, based in YANG as the preferred
 ## Control Energy Saving
 
 Control will consider how to improve GREEN metrics with the final goal to automate the monitoring, performance and remediation in case of a fault or deviation of the performance defined for the metrics.
+
+# Incremental Application of the Framework
+
+This section describes an incremental example of usage showing how a product, a service and a network can use the framework in different settings.
+
+Once upon a time there was an very old legacy router named Rusty equipped with outdated ethernet and ugly optical interfaces. Despite his worn-out appearance, Rusty was determined to contribute to the energy efficiency effort. He dreamed of finding a way to optimize his old circuits and help reduce the power consumption of the network he had faithfully served for so many years. Though he was no longer in his prime, Rusty believed that even an old router like him could make a difference in a world striving for sustainability and help reduce the carbon footprint. He is convince that he still had a part to play in making the digital world a greener place.
+
+moving to GREEN energy effiency support: 3 steps (uc) :
+
+- season 1 "baseline" : establishing a reference point of typical energy usage, which is crucial for identifying inefficiencies and measuring improvements over time.
+  At this step the controler use only the (c) part of the framework. It is collected from the datasheet.
+
+By establishing a baseline and using benchmarking, you can determine if your networking equipment is performing normally or if it is "off" from expected performance, guiding you in making necessary improvements.
+
+The initial measurement of your networking equipment's energy efficiency and performance, aka Baselining, needs to be in coordination with the vendor specifications and industry standards to understand what is considered normal or optimal performance.
+example:
+Baseline: Your switches operate at 5 Gbps per watt.
+Benchmarking: Vendor specification is 8 Gbps per watt; industry standard is 10 Gbps per watt.
+Action: Implement energy-saving measures and upgrades.
+Tracking: Measure again to see if efficiency improves towards 8-10 Gbps per watt.
+
+- season 2 "component":  part of its hw or sw migrated to support GREEN framework elements, TODO add refs to [legacy-path] sections.
+
+- season 3 "device controleur"
+
+- season 4 "network level"
 
 # Security
 
