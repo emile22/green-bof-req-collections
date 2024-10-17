@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-15T00:46:37.121505+00:00",
+  "timestamp": "2024-10-17T00:45:55.319915+00:00",
   "repo": "emile22/green-bof-req-collections",
   "labels": [
     {
@@ -91,6 +91,22 @@
       "body": "Section 5 presents some categories different to those in previous sections. It would be convenient to align the catagories as much as possible so that requirements can be easily related to specific areas / categories. This would be more tractable.",
       "createdAt": "2024-09-02T16:16:00Z",
       "updatedAt": "2024-09-02T20:34:00Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 7,
+      "id": "I_kwDOMnXjEc6aUfAc",
+      "title": "Digital Product Passport",
+      "url": "https://github.com/emile22/green-bof-req-collections/issues/7",
+      "state": "OPEN",
+      "author": "marisolpalmero",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Digital Product Passport is mentioned under the motivation section in sustainability-insights draft:\r\nhttps://datatracker.ietf.org/doc/html/draft-almprs-sustainability-insights\r\n\r\nTo be included under section 5. sustainability-insights requirements:\r\nDigital Product Passport: \r\nWith the scope to link to those attributes that might be considered as an extension of the inventory, not operational data, but data related to the vendor /manufacturing, with reference to [L.1023 ](https://www.itu.int/rec/T-REC-L.1023-202009-S/en), assessment method for circular scoring.",
+      "createdAt": "2024-10-15T15:02:22Z",
+      "updatedAt": "2024-10-15T15:02:22Z",
       "closedAt": null,
       "comments": []
     }
