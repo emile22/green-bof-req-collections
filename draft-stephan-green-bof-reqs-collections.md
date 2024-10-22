@@ -87,6 +87,8 @@ This memo extracts and groups requirements from the revisit of  operator's requi
 
 The tables below respect the format and the semantic of operators requirements table of [charter-refinement].
 
+The intend of this memo is to prepare the first GREEN WG meeting.
+
 # Operator'requirements from [charter-refinement] document
 
 The table below is a copy of the operator'requirements table of [charter-refinement]. They are based on the inputs received from operators for the GREEN BoF [operators-inputs].
