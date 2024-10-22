@@ -1,0 +1,672 @@
+
+
+
+
+Getting Ready for Energy-Efficient Networking                 E. Stephan
+Internet-Draft                                                    Orange
+Intended status: Informational                                M. Palmero
+Expires: 25 April 2025                                     Cisco Systems
+                                                         22 October 2024
+
+
+                   Green BoF requirements collections
+            draft-stephan-green-bof-reqs-collections-latest
+
+Abstract
+
+   This memo extracts and groups requirements from the revisit of
+   operator's requirements made in the last charter refinement work and
+   from the drafts which provided material to the green BoF.  The aim is
+   to determine initial sets of requirements actionable at different
+   levels of the framework.
+
+   Discussion Venues
+
+   The source of this draft and an issue tracker can be found at
+   https://github.com/emile22/green-bof-req-collections
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   The latest revision of this draft can be found at
+   https://emile22.github.io/green-bof-req-collections/draft-stephan-
+   green-bof-reqs-collections.html.  Status information for this
+   document may be found at https://datatracker.ietf.org/doc/draft-
+   stephan-green-bof-reqs-collections/.
+
+   Discussion of this document takes place on the Getting Ready for
+   Energy-Efficient Networking Working Group mailing list (mailto:green-
+   bof@ietf.org), which is archived at
+   https://mailarchive.ietf.org/arch/browse/green-bof/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/green-bof/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/emile22/green-bof-req-collections.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 25 April 2025.
+
+Copyright Notice
+
+   Copyright (c) 2024 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Operator'requirements from charter-refinement document
+   3.  Requirements extracted from legacy-path
+   4.  Requirements from rfc6988bis-green draft Open Issues
+   5.  Requirements extracted from sustainability-insights uses cases
+   6.  Framework Discussed During the BoF
+     6.1.  Inventory and Discovery
+     6.2.  GREEN Metrics
+     6.3.  Monitor and Performance
+     6.4.  Control Energy Saving
+   7.  Incremental Application of the Framework
+   8.  Security
+   9.  IANA Considerations
+   10. Informative References
+   Acknowledgments
+   Authors' Addresses
+
+1.  Introduction
+
+   This memo extracts and groups requirements from the revisit of
+   operator's requirements made in the last charter refinement work
+   [charter-refinement] and from the drafts which provided material
+   [GREEN-BOF], [sustainability-insights], [legacy-path] and
+   [rfc6988bis-green] to the green BoF.  The aim is to determine initial
+   sets of requirements actionable at different levels of the framework
+   presented in [charter-refinement].
+
+   The tables below respect the format and the semantic of operators
+   requirements table of [charter-refinement].
+
+2.  Operator'requirements from [charter-refinement] document
+
+   The table below is a copy of the operator'requirements table of
+   [charter-refinement].  They are based on the inputs received from
+   operators for the GREEN BoF [operators-inputs].
+
+   +================+=====================+===================+========+
+   | category       | requirements        | note              |Priority|
+   +================+=====================+===================+========+
+   | Observability  | Component           | Per component     |1       |
+   |                | granularity, e.g.,  | measurement       |        |
+   |                | per line-card,      |                   |        |
+   |                | per-port            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Observability  | Availability of     | Related to        |1       |
+   |                | information on the  | connected device  |        |
+   |                | power consumption   | case              |        |
+   |                | of the device,      |                   |        |
+   |                | without needing     |                   |        |
+   |                | instrumentation     |                   |        |
+   |                | connected to the    |                   |        |
+   |                | infrastructure      |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Observability  | Triggering of       | Alarm             |1??     |
+   |                | alarms when         | notification      |        |
+   |                | consumption         |                   |        |
+   |                | deviate from a      |                   |        |
+   |                | nominal usage       |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Observability  | Improvement of      | Standardized      |1       |
+   |                | metering solutions  | metering??        |        |
+   |                | (finer              |                   |        |
+   |                | granularity,        |                   |        |
+   |                | control of the      |                   |        |
+   |                | energy efficiency   |                   |        |
+   |                | and saving,         |                   |        |
+   |                | interoperability,   |                   |        |
+   |                | exposure)           |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Common definition   | Standard metric   |1       |
+   |                | of energy           |                   |        |
+   |                | efficiency in       |                   |        |
+   |                | network devices/    |                   |        |
+   |                | components          |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Common methodology  | Standard          |2       |
+   |                | of measurements     | methodology       |        |
+   |                | for fair            |                   |        |
+   |                | comparison          |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | How to provide      | Time based,       |2 ??    |
+   |                | accurate figures    | location based    |        |
+   |                | (context of the     | visualization     |        |
+   |                | measurement in      |                   |        |
+   |                | terms of time       |                   |        |
+   |                | period, location,   |                   |        |
+   |                | traffic, etc        |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Database for        | Information       |3       |
+   |                | decision in case    | Correlation       |        |
+   |                | of large data       |                   |        |
+   |                | transfer            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Analysis       | Ability of multi-   | POI Use Case      |3       |
+   |                | layer analysis      |                   |        |
+   |                | (e.g., IP plus      |                   |        |
+   |                | optical)            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control& Mgmt  | To have devices     | Dynamic Energy    |2       |
+   |                | with elastic power  | Saving            |        |
+   |                | consumption         |                   |        |
+   |                | according to the    |                   |        |
+   |                | carried traffic     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control& Mgmt  | Support of          | Network Level     |2       |
+   |                | network-wide        | Mgmt              |        |
+   |                | energy saving and   |                   |        |
+   |                | optimization        |                   |        |
+   |                | functions           |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control& Mgmt  | Support of          | Network Level     |2       |
+   |                | network-wide        | Mgmt              |        |
+   |                | control of energy   |                   |        |
+   |                | optimization APIs,  |                   |        |
+   |                | allowing external   |                   |        |
+   |                | applications to     |                   |        |
+   |                | optimize            |                   |        |
+   |                | consumption         |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control& Mgmt  | Advanced sleep      | Dynamic Energy    |2       |
+   |                | mode, needing some  | Saving            |        |
+   |                | sort of low power   |                   |        |
+   |                | mode when node is   |                   |        |
+   |                | lightly utilized    |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control& Mgmt  | Ability to steer    | Traffic           |4       |
+   |                | traffic based on    | Engineering       |        |
+   |                | power savings       |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control& Mgmt  | Comparison of       | Intent based      |2       |
+   |                | decision vs         | Concept           |        |
+   |                | optimal case        |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Control& Mgmt  | Synchronous query   | Network Level     |2       |
+   |                | support             | Query             |        |
+   +----------------+---------------------+-------------------+--------+
+   | Inventory      | Inventory of power  | Component &       |1       |
+   | Management     | components (of      | Device Level      |        |
+   |                | devices, racks,     |                   |        |
+   |                | etc) including      |                   |        |
+   |                | together            |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Interaction    | Inclusion of data   | Data Center Case  |3       |
+   | with other     | center networks in  |                   |        |
+   | domain         | the picture         |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Interaction    | Inclusion of data   | Mobile Network    |3       |
+   | with other     | center networks in  | Case              |        |
+   | domain         | the picture         |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Optimize the        | More renewable    |4       |
+   | & Carbon       | overall CO2         | energy            |        |
+   | Emission       | footprint (i.e.,    |                   |        |
+   |                | energy mix based    |                   |        |
+   |                | on source type)     |                   |        |
+   |                | facilitating the    |                   |        |
+   |                | engineering of PoP  |                   |        |
+   |                | More renewable      |                   |        |
+   |                | energy              |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Support GHG units   | Measurement Units |4       |
+   | & Carbon       |                     |                   |        |
+   | Emission       |                     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Support Energy      | More renewable    |2 ??    |
+   | & Carbon       | units               | energy            |        |
+   | Emission       |                     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | 4                   |                   |        |
+   | & Carbon       |                     |                   |        |
+   | EmissiCarbon,  |                     |                   |        |
+   | renewable      |                     |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Accounting of       | Accounting Cost   |4       |
+   | & Carbon       | legacy installed    |                   |        |
+   | Emission       | based GHG/energy    |                   |        |
+   +----------------+---------------------+-------------------+--------+
+   | Sustainability | Track device/       | Manufacturing,    |4       |
+   | & Carbon       | network Energy      | transport(weight, |        |
+   | Emission       | Consumption Before  | volume, package)  |        |
+   |                | Operation           |                   |        |
+   +----------------+---------------------+-------------------+--------+
+
+                                  Table 1
+
+3.  Requirements extracted from [legacy-path]
+
+    +============+============================+===========+==========+
+    | category   | requirements               | note      | Priority |
+    +============+============================+===========+==========+
+    | Inventory  | component control capacity | Per       | 1 (i)    |
+    | Management | (aka component max on/off  | component |          |
+    |            | frequency supported)       | control   |          |
+    +------------+----------------------------+-----------+----------+
+    | Analysis   | assess the gains of        | Device    | 1 (ii)   |
+    |            | introducing eco-designed   | Level     |          |
+    |            | components in a device     | Mgmt      |          |
+    +------------+----------------------------+-----------+----------+
+    | Control&   | comprehensive support of   | Network   | 1 (iii)  |
+    | Mgmt       | network-wide energy        | Level     |          |
+    |            | efficiency includes legacy | Mgmt      |          |
+    |            | devices                    |           |          |
+    +------------+----------------------------+-----------+----------+
+
+                                 Table 2
+
+   (i) Avoid control to break the component
+
+   (ii) the gain must be measurable
+
+   (iii) network-wide solution must include legacy devices and green-wg
+   ready devices
+
+4.  Requirements from [rfc6988bis-green] draft Open Issues
+
+   +===============+=================+=====================+==========+
+   | category      | requirements    | note                | Priority |
+   +===============+=================+=====================+==========+
+   | Control& Mgmt | Distinguish     | rfc6988bis battery  | 2        |
+   |               | backup sources  |                     |          |
+   +---------------+-----------------+---------------------+----------+
+   | Inventory     | Reporting on    | Fit in "Inventory   | 2        |
+   | Management    | Other Entities, | of power components |          |
+   |               | typically smart | (of devices, racks, |          |
+   |               | PDU or PoE      | etc) including      |          |
+   |               |                 | together"           |          |
+   +---------------+-----------------+---------------------+----------+
+   | Observability | Room sensor     | Data Center Case    | 4        |
+   | or            | (hvac...)       |                     |          |
+   | Interaction   |                 |                     |          |
+   | with Other    |                 |                     |          |
+   | domain        |                 |                     |          |
+   +---------------+-----------------+---------------------+----------+
+   | Observability | flexible        | Standard metric     | 2        |
+   |               | (future-proof)  |                     |          |
+   |               | description of  |                     |          |
+   |               | the nature of   |                     |          |
+   |               | the sources of  |                     |          |
+   |               | the energy used |                     |          |
+   +---------------+-----------------+---------------------+----------+
+
+                                 Table 3
+
+5.  Requirements extracted from [sustainability-insights] uses cases
+
+   There are limited to energy consumption vs sustainability
+
+   +===============+=======================+================+==========+
+   | category      | requirements          | note           | Priority |
+   +===============+=======================+================+==========+
+   | Observability | Provide near-real-    | Helps identify | 2        |
+   |               | time energy           | which devices  |          |
+   |               | consumption to        | or network     |          |
+   |               | different device      | functions are  |          |
+   |               | types, service        | consuming more |          |
+   |               | types, and            | energy.        |          |
+   |               | individual users      |                |          |
+   +---------------+-----------------------+----------------+----------+
+   | Migration or  | Provide KPIs for      | Helps make     |          |
+   | Upgrade       | energy efficiency     | informed       |          |
+   |               | parameters, enhance   | decisions      |          |
+   |               | accuracy of upgrade   | about upgrades |          |
+   |               | decisions             | based on       |          |
+   |               |                       | actual usage   |          |
+   |               |                       | data.          |          |
+   +---------------+-----------------------+----------------+----------+
+   | Recycling     | Report on percentage  | Major driver   | 4        |
+   |               | of recycled user      | of the         |          |
+   |               | devices and           | circular       |          |
+   |               | components.  Enable   | economy,       |          |
+   |               | comprehensive         | transparency   |          |
+   |               | reporting and         | is key         |          |
+   |               | recycling efforts     |                |          |
+   +---------------+-----------------------+----------------+----------+
+   | Power         | Provide KPIs for      | Monitor        | 4        |
+   | Optimization  | energy efficiency     | network and    |          |
+   |               | parameters.  Perform  | application    |          |
+   |               | actions to reduce     | performance to |          |
+   |               | energy consumption    | optimize power |          |
+   |               |                       | usage          |          |
+   +---------------+-----------------------+----------------+----------+
+   | Control& Mgmt | Stop and restart      | Save power     | 2        |
+   | Switch off    | WiFi APs with the     | consumption    |          |
+   |               | right time, space,    | during periods |          |
+   |               | and service           | when APs are   |          |
+   |               | granularity           | not in use.    |          |
+   +---------------+-----------------------+----------------+----------+
+
+                                  Table 4
+
+6.  Framework Discussed During the BoF
+
+   The overall framework is shown in Figure 1.
+
+         What needs to be standardized for Framework
+
+
+  (3) Network Domain Level :
+
+  (a)              (b)              (c)
+  Inventory        Monitor       +- DataSheets/DataBase and/or via API
+  Of identity      Energy        |  Metadata and other device/component
+  and Capability   Efficiency    |  /network related information:
+       ^               ^         |
+       |               |         |  .Power/Energy related metrics
+       |               |         |  .information
+       |               |         |  .origin of Energy Mix
+       |               |         |  .carbon aware based on location
+       |               |         |
+       |               |         |
+       |               |         |
+       |               |         v
+  +--------------------------------------------------------------------+
+  |                   *                                                |
+  |     (2) controller   (collection, compute and aggregate?)          |
+  |                                                                    |
+  +--------------------------------------------------------------------+
+               ^              ^                   ^ |
+    (d)        |  (e)         |  (f)              | |(g)
+    Inventory  |  Monitor     |  GREEN WG:        | |GREEN WG: Control
+    Capability |  Traffic     |  Monitor power    | |(Energy saving
+               |  & power     |  Proportion,      | |Functionality
+               |  consumption |  Energy efficiency| |Localized mgmt/
+               |              |  ratio, etc)      | |network wide mgmt)
+               |              |                   | |
+               |              |                   | |
+               |              |                   | v
+  +--------------------------------------------------------------------+
+  |                                            *                       |
+  |                  (1) Device/Component Level                        |
+  |                                                                    |
+  | +---------+  +-----------+  +----------------+  +----------------+ |
+  | | (I)     |  | (II)      |  | (III)          |  | (IV)           | |
+  | | Network |  | Device    |  | Legacy Network |  | 'Attached'(PoE | |
+  | | Device  |  | Component |  | Device         |  | kind) Device   | |
+  | |         |  |           |  |                |  |                | |
+  | +---------+  +-----------+  +----------------+  +----------------+ |
+  +--------------------------------------------------------------------+
+
+  (*) Energy Efficiency Management Function is implemented inside the
+  device or in a controller
+
+               Figure 1: Framework discussed during the BoF
+
+   The main elements in the framework are as follows:
+
+   (a),(d) Inventory
+
+   (b),(c) GREEN Metrics
+
+   (b),(f) Monitor energy efficiency
+
+   (e) Monitor power consumption and traffic (IPPM WG throughput,
+   traffic load, etc)
+
+   (g) Control Energy Saving
+
+6.1.  Inventory and Discovery
+
+   Based on the framework discussed during the BoF, the architectural
+   requirements for the "GREEN" Framework:
+
+   From a network inventory [network-inventory] point of view, when
+   discussing Energy Efficiency metrics, also known as GREEN metrics, it
+   is important to distinguish between static and dynamic attributes:
+
+   "Static" attributes refer to those that do not change based on the
+   state of the network infrastructure.  The following examples are all
+   static attributes that we can relate to the inventory, implemented in
+   the network devices or as part of external sources:
+
+   *  Serial number
+
+   *  Product name
+
+   *  Part number
+
+   *  Vendor
+
+   *  Device family
+
+   *  Sensor(s)
+
+   Static attributes also include benchmarking information related to
+   energy consumption by design and test conditions, normally associated
+   to PSU's, line-cards, etc.:
+
+   *  Idle power
+
+   *  Max power
+
+   *  Typical power
+
+   *  Accuracy rate
+
+   *  PSU efficiency (80+)
+
+   *  Power allocation
+
+   *  Etc.
+
+   These attributes might be collected from the device/component itself
+   or they might be parameters as part of external sources, i.e.,
+   databases owned by the hardware or software providers, where API
+   access will be preferred.
+
+   Normally, the "Discovery" process will be updating static attributes
+   that represent the up-to-date inventory of the network.  The
+   Discovery process relates primarily to the static attributes, where
+   will consider if a device or component has been replaced or is out of
+   service.  The "Operation" process will be updating the so-called
+   dynamic attributes.
+
+   Dynamic attributes are those that are subject to change due to the
+   running operations, including configuration and state changes, and
+   they will need to be collected regularly.
+
+   They will be updated as part of the regular operations.  Dynamic
+   attributes might be related to sensors(environmental), traffic,
+   state, etc.  They will include attributes like:
+
+   *  Temperature
+
+   *  Current
+
+   *  Voltage
+
+   *  Power
+
+   *  Input and output traffic
+
+   The data collection frequency might need to be adjusted based on the
+   specific attributes.  For example, the discovery of linecards
+   installed on network devices will not change every hour, whereas
+   temperature and power sensor information changes will need to be
+   closer to real-time.
+
+   Even though sensors normally are embedded in the network device/
+   component, there are external sensors meant to measure temperature
+   and energy consumption.  The network controller will need to collect
+   and correlate information to compose the right GREEN metric for the
+   network device/component.
+
+6.2.  GREEN Metrics
+
+   Based on the work initiated under
+   [I-D.draft-cx-opsawg-green-metrics-02], it might be required to
+   prioritise the definition and data models for the metrics relevant to
+   the components and network elements, as they will be the ones
+   influencing the most to the metrics related to flows, path and
+   network.
+
+6.3.  Monitor and Performance
+
+   Monitor and Performance will include the guidelines for the
+   association of the different attributes that defined the GREEN
+   metrics to compose and aggregate the data collection to formed the
+   reporting
+
+   The architecture could define a prefer interface, based in YANG as
+   the preferred data model, but should allow enough freedom in the
+   implementation, where any kind of quantity can be measured, any kind
+   of collection protocol and mechanism employed, and the telemetry data
+   flows aggregated using any kind of operation.
+
+6.4.  Control Energy Saving
+
+   Control will consider how to improve GREEN metrics with the final
+   goal to automate the monitoring, performance and remediation in case
+   of a fault or deviation of the performance defined for the metrics.
+
+7.  Incremental Application of the Framework
+
+   This section describes an incremental example of usage showing how a
+   product, a service and a network can use the framework in different
+   settings.
+
+   Once upon a time there was an very old legacy router named Rusty
+   equipped with outdated ethernet and ugly optical interfaces.  Despite
+   his worn-out appearance, Rusty was determined to contribute to the
+   energy efficiency effort.  He dreamed of finding a way to optimize
+   his old circuits and help reduce the power consumption of the network
+   he had faithfully served for so many years.  Though he was no longer
+   in his prime, Rusty believed that even an old router like him could
+   make a difference in a world striving for sustainability and help
+   reduce the carbon footprint.  He is convince that he still had a part
+   to play in making the digital world a greener place.
+
+   moving to GREEN energy effiency support: 3 steps (uc) :
+
+   *  season 1 "baseline" : establishing a reference point of typical
+      energy usage, which is crucial for identifying inefficiencies and
+      measuring improvements over time.  At this step the controler use
+      only the (c) part of the framework.  It is collected from the
+      datasheet.
+
+   By establishing a baseline and using benchmarking, you can determine
+   if your networking equipment is performing normally or if it is "off"
+   from expected performance, guiding you in making necessary
+   improvements.
+
+   The initial measurement of your networking equipment's energy
+   efficiency and performance, aka Baselining, needs to be in
+   coordination with the vendor specifications and industry standards to
+   understand what is considered normal or optimal performance. example:
+   Baseline: Your switches operate at 5 Gbps per watt.  Benchmarking:
+   Vendor specification is 8 Gbps per watt; industry standard is 10 Gbps
+   per watt.  Action: Implement energy-saving measures and upgrades.
+   Tracking: Measure again to see if efficiency improves towards 8-10
+   Gbps per watt.
+
+   *  season 2 "component": part of its hw or sw migrated to support
+      GREEN framework elements, TODO add refs to [legacy-path] sections.
+
+   *  season 3 "device controleur"
+
+   *  season 4 "network level"
+
+8.  Security
+
+   Adding new interfaces on devices increase attack surfaces.  Devices
+   have brief variation of power consumption due their internal works.
+   Reducing the power available may reduce their routing capacity which
+   may reduce network performance and resiliency.
+
+9.  IANA Considerations
+
+   This document has no IANA actions.
+
+10.  Informative References
+
+   [charter-refinement]
+              "GREEN BOF Charter Refinement discussion", 20 August 2024,
+              <https://github.com/marisolpalmero/GREEN-
+              bof/blob/main/Meetings/Meeting_0820_2024/
+              GREEN%20BOF%20Charter%20Refining%20discussion-
+              2024-8-20.pdf>.
+
+   [GREEN-BOF]
+              "BOF proposal for GREEN WG Creation", 10 May 2024,
+              <https://github.com/marisolpalmero/GREEN-bof>.
+
+   [I-D.draft-cx-opsawg-green-metrics-02]
+              Clemm, A., Dong, L., Mirsky, G., Ciavaglia, L., Tantsura,
+              J., Odini, M., Schooler, E., Rezaki, A., and C. Pignataro,
+              "Green Networking Metrics", Work in Progress, Internet-
+              Draft, draft-cx-opsawg-green-metrics-02, 4 March 2024,
+              <https://datatracker.ietf.org/doc/html/draft-cx-opsawg-
+              green-metrics-02>.
+
+   [legacy-path]
+              "Requirements for Energy Efficiency Management", 21 July
+              2024, <https://datatracker.ietf.org/doc/draft-stephan-
+              legacy-path-eco-design>.
+
+   [network-inventory]
+              "YANG Data Model for Network Inventory", 20 July 2024,
+              <https://datatracker.ietf.org/doc/draft-ietf-ivy-network-
+              inventory-yang>.
+
+   [operators-inputs]
+              "Input from Operators to GREEN BoF", 20 July 2024,
+              <https://datatracker.ietf.org/meeting/120/materials/
+              slides-120-green-input-from-operators-to-green-bof-01>.
+
+   [rfc6988bis-green]
+              "Requirements for Energy Efficiency Management, 11 years
+              after the EMAN RFC6988", 21 July 2024,
+              <https://datatracker.ietf.org/doc/draft-eman-green-
+              rfc6988bis>.
+
+   [sustainability-insights]
+              "Sustainability Insights", 7 May 2024,
+              <https://datatracker.ietf.org/doc/html/draft-almprs-
+              sustainability-insights>.
+
+Acknowledgments
+
+   This version collectes works from the Green Bof proponents: Luis,
+   Marisol, Tony, Qin and Emile, from our coachs Jari, Adrian and
+   Benoit, and from our supporter Tobe
+
+Authors' Addresses
+
+   Emile Stephan
+   Orange
+   France
+   Email: emile.stephan@gmail.com
+
+
+   Marisol Palmero
+   Cisco Systems
+   Email: mpalmero@cisco.com
