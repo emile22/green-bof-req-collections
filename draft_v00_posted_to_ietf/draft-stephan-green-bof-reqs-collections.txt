@@ -107,6 +107,8 @@ Table of Contents
    The tables below respect the format and the semantic of operators
    requirements table of [charter-refinement].
 
+   The intend of this memo is to prepare the first GREEN WG meeting.
+
 2.  Operator'requirements from [charter-refinement] document
 
    The table below is a copy of the operator'requirements table of
