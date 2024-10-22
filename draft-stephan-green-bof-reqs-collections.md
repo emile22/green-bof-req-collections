@@ -21,6 +21,7 @@ venue:
 v: 3
 
 author:
+
  -
    name: Emile Stephan
    organization: Orange
